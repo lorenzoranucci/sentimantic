@@ -1,0 +1,6 @@
+[submodule "snorkel"]
+	path = snorkel
+	url = https://github.com/lorenzoranucci/snorkel
+[submodule "wikiextractor"]
+	path = wikiextractor
+	url = https://github.com/lorenzoranucci/wikiextractor.git
