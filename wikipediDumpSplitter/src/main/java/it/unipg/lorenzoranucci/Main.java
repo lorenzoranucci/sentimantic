@@ -5,6 +5,7 @@ import org.apache.commons.text.StringEscapeUtils;
 
 import java.io.*;
 import java.net.URISyntaxException;
+import java.nio.charset.Charset;
 import java.util.regex.Pattern;
 
 /**
@@ -14,8 +15,16 @@ public class Main {
 
     private static File destinationFolder;
     private static PrintWriter currentPrintWriter=null;
+    private static int outputFilesCounter=1;
+    private static Integer maxFileSizeMB=null;
+    private static File currentOutFile=null;
+
 
     public static void main(String[] args) throws URISyntaxException, IOException {
+        if(args.length>2){
+            maxFileSizeMB=Integer.parseInt(args[2]);
+        }
+
         String destinationFolderPath=args[1];
         destinationFolder=new File(destinationFolderPath);
         destinationFolder.mkdirs();
@@ -28,6 +37,7 @@ public class Main {
         final Pattern startTagPattern = Pattern.compile("<\\s*doc .*id=\"");
         final Pattern endTagPattern = Pattern.compile("<\\s*\\/doc\\s*>");
         boolean documentWriting=false;
+        createOutputFileAndWriter();
         while((line=dumpBufferedReader.readLine())!=null){
             boolean startTagFound=false;
             boolean endTagFound=false;
@@ -40,12 +50,13 @@ public class Main {
 
             if(documentWriting && (endTagFound || startTagFound)){
                 closeDocument();
+                documentWriting=false;
             }
 
             if(startTagFound){
                 String[] split=line.split("<\\s*doc .*id=\"");
                 String id=split[1].split("\"")[0];
-                createDocument(id);
+                openDocument(id);
                 documentWriting=true;
             }
 
@@ -56,23 +67,30 @@ public class Main {
 
     }
 
-    private static void createDocument(String id){
-        currentPrintWriter=null;
-        File currentDocumentFile=new File(destinationFolder.getPath()+File.separator+id+".xml");
-        try {
-            currentDocumentFile.createNewFile();
-        } catch (IOException e) {
-            e.printStackTrace();
+    private static void createOutputFileAndWriter() throws IOException {
+        currentOutFile=new File(destinationFolder.getPath()+File.separator+"out"+outputFilesCounter+".xml");
+        currentOutFile.createNewFile();
+        currentPrintWriter=new PrintWriter(new OutputStreamWriter(new FileOutputStream(currentOutFile), Charset.forName("UTF-8")));
+        currentPrintWriter.println("<dump"+outputFilesCounter+">");
+        currentPrintWriter.flush();
+    }
+
+    private static void closeOutputFileAndWriter() throws IOException {
+        currentPrintWriter.println("</dump"+outputFilesCounter+">");
+        currentPrintWriter.flush();
+        currentPrintWriter.close();
+    }
+
+    private static void openDocument(String id) throws IOException {
+        if(maxFileSizeMB!=null && (currentOutFile.length()/1000000)>maxFileSizeMB){
+            closeOutputFileAndWriter();
+            outputFilesCounter++;
+            createOutputFileAndWriter();
         }
-        try {
-            currentPrintWriter=new PrintWriter(new BufferedWriter(new FileWriter(currentDocumentFile)));
-            currentPrintWriter.println("<document>");
-            currentPrintWriter.println("\t<id>"+id+"</id>");
-            currentPrintWriter.println("\t<text>");
-            currentPrintWriter.flush();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        currentPrintWriter.println("<document>");
+        currentPrintWriter.println("\t<id>"+id+"</id>");
+        currentPrintWriter.println("\t<text>");
+        currentPrintWriter.flush();
     }
 
     private static void writeLine(String line){
@@ -87,8 +105,7 @@ public class Main {
         if(currentPrintWriter!=null ) {
             currentPrintWriter.println("\t</text>");
             currentPrintWriter.println("\t</document>");
-            currentPrintWriter.close();
-            currentPrintWriter=null;
         }
+
     }
 }
