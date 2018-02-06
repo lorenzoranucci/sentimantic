@@ -2,6 +2,8 @@ package it.unipg.lorenzoranucci;
 
 
 import org.apache.commons.text.StringEscapeUtils;
+import org.jsoup.Jsoup;
+import org.jsoup.safety.Whitelist;
 
 import java.io.*;
 import java.net.URISyntaxException;
@@ -65,6 +67,7 @@ public class Main {
 
         }
 
+        closeOutputFileAndWriter();
     }
 
     private static void createOutputFileAndWriter() throws IOException {
@@ -95,7 +98,8 @@ public class Main {
 
     private static void writeLine(String line){
         if(currentPrintWriter!=null ) {
-            String escapedLine = StringEscapeUtils.escapeXml11(StringEscapeUtils.escapeHtml4(line));
+            String lineHtmlRemoved= Jsoup.clean(line, new Whitelist());
+            String escapedLine = StringEscapeUtils.escapeXml11(lineHtmlRemoved);
             currentPrintWriter.println(escapedLine);
             currentPrintWriter.flush();
         }
