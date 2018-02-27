@@ -1,0 +1,65 @@
+% !TEX root = ../my-thesis.tex
+%
+% ------------------------------------  --> cover title page
+\begin{titlepage}
+	\pdfbookmark[0]{Cover}{Cover}
+	\flushright
+	\hfill
+	\vfill
+	{\LARGE\thesisTitle \par}
+	\rule[5pt]{\textwidth}{.4pt} \par
+	{\Large\thesisName}
+	\vfill
+	\textit{\large\thesisDate} \\
+	Versione: \thesisVersion
+\end{titlepage}
+
+
+% ------------------------------------  --> main title page
+\begin{titlepage}
+	\pdfbookmark[0]{Titlepage}{Titlepage}
+	\tgherosfont
+	\centering
+
+	{\Large \thesisUniversity} \\[4mm]
+	\includegraphics[width=6cm]{gfx/logo.pdf} \\[2mm]
+	\textsf{\thesisUniversityDepartment} \\
+	\textsf{\thesisUniversityInstitute} \\
+	\textsf{\thesisUniversityGroup} \\
+
+	\vfill
+	{\large \thesisSubject} \\[5mm]
+	{\LARGE \color{ctcolortitle}\textbf{\thesisTitle} \\[10mm]}
+	{\Large \thesisName} \\
+
+	\vfill
+	\begin{minipage}[t]{.27\textwidth}
+		\raggedleft
+		\textit{Relatrice}
+	\end{minipage}
+	\hspace*{15pt}
+	\begin{minipage}[t]{.65\textwidth}
+		{\Large \thesisFirstReviewer} \\
+	  	{\small \thesisFirstReviewerDepartment} \\[-1mm]
+		{\small \thesisFirstReviewerUniversity}
+	\end{minipage} \\[10mm]
+
+	\thesisDate \\
+
+\end{titlepage}
+
+
+% ------------------------------------  --> lower title back for single page layout
+\hfill
+\vfill
+{
+	\small
+	\textbf{\thesisName} \\
+	\textit{\thesisTitle} \\
+	\thesisSubject, \thesisDate \\
+	Relatrice: \thesisFirstReviewer\\[1.5em]
+	\textbf{\thesisUniversity} \\
+	\thesisUniversityDepartment \\
+	\thesisUniversityStreetAddress \\
+	\thesisUniversityPostalCode\ \thesisUniversityCity
+}
