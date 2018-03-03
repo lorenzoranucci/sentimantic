@@ -4,3 +4,6 @@
 [submodule "wikiextractor"]
 	path = wikiextractor
 	url = https://github.com/lorenzoranucci/wikiextractor.git
+[submodule "lookup"]
+	path = lookup
+	url = https://github.com/dbpedia/lookup.git

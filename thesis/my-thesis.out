@@ -1,0 +1,38 @@
+\BOOKMARK [0][]{Cover.0}{Cover}{}% 1
+\BOOKMARK [0][]{Titlepage.0}{Titlepage}{}% 2
+\BOOKMARK [0][]{Abstract.0}{Abstract}{}% 3
+\BOOKMARK [0][]{chapter.1}{1 Introduzione}{}% 4
+\BOOKMARK [1][]{section*.4}{1.1 Linked Data}{chapter.1}% 5
+\BOOKMARK [1][]{section*.5}{1.2 Come si producono i Linked Data}{chapter.1}% 6
+\BOOKMARK [1][]{section*.6}{1.3 DBpedia}{chapter.1}% 7
+\BOOKMARK [2][]{section*.7}{1.3.1 DBpedia Challenge}{section*.6}% 8
+\BOOKMARK [1][]{section*.8}{1.4 Struttura della tesi}{chapter.1}% 9
+\BOOKMARK [0][]{chapter.2}{2 Definizione del problema e lavori correlati}{}% 10
+\BOOKMARK [1][]{section*.10}{2.1 Costruzione di una base di conoscenza}{chapter.2}% 11
+\BOOKMARK [1][]{section*.11}{2.2 Information Extraction}{chapter.2}% 12
+\BOOKMARK [1][]{section*.12}{2.3 NLP}{chapter.2}% 13
+\BOOKMARK [1][]{section*.13}{2.4 Slot Filling Task}{chapter.2}% 14
+\BOOKMARK [1][]{section*.14}{2.5 Lavori Correlati}{chapter.2}% 15
+\BOOKMARK [2][]{section*.15}{2.5.1 DBpedia}{section*.14}% 16
+\BOOKMARK [2][]{section*.16}{2.5.2 LectorPlus e Airpedia}{section*.14}% 17
+\BOOKMARK [2][]{section*.17}{2.5.3 DeepDive e Snorkel}{section*.14}% 18
+\BOOKMARK [0][]{chapter.3}{3 Architettura della soluzione}{}% 19
+\BOOKMARK [1][]{section*.19}{3.1 Estrazione del corpus}{chapter.3}% 20
+\BOOKMARK [1][]{section*.20}{3.2 Parsing NLP}{chapter.3}% 21
+\BOOKMARK [1][]{section*.21}{3.3 Inferenza dei tipi di candidati}{chapter.3}% 22
+\BOOKMARK [1][]{section*.22}{3.4 Estrazione dei candidati}{chapter.3}% 23
+\BOOKMARK [1][]{section*.23}{3.5 Gold-labelling di valutazione}{chapter.3}% 24
+\BOOKMARK [1][]{section*.24}{3.6 Interrogazione dei campioni della KB}{chapter.3}% 25
+\BOOKMARK [1][]{section*.25}{3.7 Labelling Functions}{chapter.3}% 26
+\BOOKMARK [2][]{section*.26}{3.7.1 Distant Supervision}{section*.25}% 27
+\BOOKMARK [2][]{section*.27}{3.7.2 Euristiche specifiche}{section*.25}% 28
+\BOOKMARK [2][]{section*.28}{3.7.3 Crowdsourcing}{section*.25}% 29
+\BOOKMARK [1][]{section*.29}{3.8 Training del modello}{chapter.3}% 30
+\BOOKMARK [1][]{section*.30}{3.9 Estrazione delle triple}{chapter.3}% 31
+\BOOKMARK [0][]{chapter.4}{4 Test e Risultati}{}% 32
+\BOOKMARK [1][]{section*.32}{4.1 Test}{chapter.4}% 33
+\BOOKMARK [1][]{section*.33}{4.2 Risultati}{chapter.4}% 34
+\BOOKMARK [0][]{chapter.5}{5 Sviluppi futuri}{}% 35
+\BOOKMARK [0][]{chapter.6}{6 Conclusioni}{}% 36
+\BOOKMARK [0][]{Colophon.0}{Colophon}{}% 37
+\BOOKMARK [0][]{Declaration.0}{Declaration}{}% 38

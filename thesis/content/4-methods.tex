@@ -1,0 +1,93 @@
+% !TEX root = ../my-thesis.tex
+%
+\chapter{Architettura della soluzione}
+\label{sec:methods}
+
+%\cleanchapterquote{Innovation distinguishes between a leader and a follower.}{Steve Jobs}{(CEO Apple Inc.)}
+Il lavoro di questa tesi si basa sull'intuizione che i risultati raggiunti nell'ambito della KBP mediante \textit{Distant Supervision}  \ref{sec:literature_review:lectorplus_airpedia} \cite{Mintz2009DistantSF,Exner2012EntityEF,Aprosio2013ExtendingTC,Soderland2013OpenIE,Cannaviccio2016AccurateFH} e gli sviluppi raggiunti dalla nuova tecnica di \textit{Data Programming} \ref{sec:literature_review:deepdive_snorkel} \cite{Ratner2016DataPC,Ehrenberg2016DataPW,Bach2017LearningTS,WEB:weak_supervision} possano essere combinati per ottenere risultati allo stato dell'arte nella costruzione o popolamento di basi di conoscenza. 
+In particolare il fine è quello di dare una dimostrazione empirica di come una base di conoscenza Linked Data come DBpedia possa essere popolata con nuove triple, composte da predicati già definiti in un'ontologia, analizzando testi enciclopedici scritti in linguaggio naturale (Wikipedia) sfruttando l'insieme di triple già esistenti (distant supervision) ed euristiche specifiche (weak supervision).
+
+Il paradigma di data programming consente l'utilizzo di tecniche di Machine Learning anche laddove non siano disponibili insiemi di training già etichettati a mano. 
+Il modello di data programming è attualmente implementato nei progetti DeepDive e Snorkel.
+Si è scelto di utilizzare quest'ultimo principalmente perchè:
+\begin{itemize}
+\item consente la creazione di insiemi di training in maniera automatizzata utilizzando \textit{funzioni di labelling} di vario genere, tra cui proprio la distant supervision
+\item l'insieme etichettato prodotto da queste funzioni viene poi raffinato da un algoritmo generativo e infine usato come input per allenare un modello discriminativo
+\end{itemize}
+
+
+La distant supervision necessita a sua volta di una base di conoscenza di supporto dalla quale reperire campioni di esempio. Nel progetto viene impiegata come fonte dei dati la stessa base di conoscenza che si vuole popolare: DBpedia. Come ogni base di dati Linked Data, il punto di accesso per effettuarne l'interrogazione è lo SPARQL Endpoint. Il linguaggio SPARQL viene impiegato in questo lavoro sia per il reperimento dei dati campione che per inferire metadati di interesse sui predicati Linked Data presi in esame.
+
+In questo capitolo viene descritta la pipeline che, da un un corpus di testi di Wikipedia e un insieme di predicati Linked Data (input), allena un modello di machine learning in grado di classificare le frasi del corpus ed estrarne nuove triple (output).
+La struttura è la seguente:
+\begin{itemize}
+
+\item analisi del corpus con tecniche di NLP che, per ogni frase rilevata, memorizzano features testuali (Sezioni \ref{sec:methods:text_extraction} e \ref{sec:methods:parsing_nlp})
+
+\item inferenza dei tipi di Named Entity (o Candidati) che esprimono il dominio e codominio di ogni predicato in input (Sezioni \ref{sec:methods:candidate_inference} e \ref{sec:methods:candidate_extraction})
+
+\item labelling delle frasi candidate con distant suprevision e weak supervision  (Sezioni \ref{sec:methods:kb_quering} e \ref{sec:methods:labelling})
+
+\item raffinamento dell'insieme etichettato e training del modello di classificazione (\ref{sec:methods:training})
+
+\item estrazione delle triple dalle frasi classificate positivamente (\ref{sec:methods:triples_extraction})
+\end{itemize} 
+
+ 
+
+\section{Estrazione del \textit{corpus}}
+\label{sec:methods:text_extraction}
+
+\section{Parsing NLP}
+\label{sec:methods:parsing_nlp}
+
+\section{Inferenza dei tipi di candidati}
+\label{sec:methods:candidate_inference}
+
+\section{Estrazione dei candidati}
+\label{sec:methods:candidate_extraction}
+
+\section{\textit{Gold-labelling} di valutazione}
+\label{sec:methods:gold_labelling}
+
+\section{Interrogazione dei campioni della KB}
+\label{sec:methods:kb_quering}
+
+
+
+\section{Labelling Functions}
+\label{sec:methods:labelling}
+
+\subsection{Distant Supervision}
+\label{sec:methods:labelling:distant_supervision}
+
+\subsubsection{DBpedia Lookup}
+\label{sec:methods:labelling:distant_supervision:lookup}
+
+\subsection{Euristiche specifiche}
+\label{sec:methods:labelling:heuristic}
+
+\subsection{Crowdsourcing}
+\label{sec:methods:labelling:crowdsourcing}
+
+\section{Training del modello}
+\label{sec:methods:training}
+
+\section{Estrazione delle triple}
+\label{sec:methods:triples_extraction}
+
+
+
+%\begin{figure}[htb]
+%	\includegraphics[width=\textwidth]{gfx/Clean-Thesis-Figure}
+%	\caption{Figure example: \textit{(a)} example part one, \textit{(c)} example part two; \textit{(c)} example part three}
+%	\label{fig:system:example1}
+%\end{figure}
+
+
+
+
+
+
+
+

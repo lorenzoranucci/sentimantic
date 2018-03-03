@@ -33,8 +33,8 @@
 % --------------------------
 %\renewcaptionname{ngerman}{\figurename}{Abb.}
 %\renewcaptionname{ngerman}{\tablename}{Tab.}
-\renewcaptionname{english}{\figurename}{Fig.}
-\renewcaptionname{english}{\tablename}{Tab.}
+%\renewcaptionname{italian}{\figurename}{Fig.}
+%\renewcaptionname{italian}{\tablename}{Tab.}
 
 % --------------------------
 % Front matter
@@ -45,11 +45,11 @@
 \cleardoublepage
 
 \pagestyle{plain}				% display just page numbers
-\input{content/abstract}		% INCLUDE: the abstracts (english and german)
+\input{content/1-abstract}		% INCLUDE: the abstracts (english and german)
 \cleardoublepage
 %
-\input{content/acknowledgement} % INCLUDE: acknowledgement
-\cleardoublepage
+%\input{content/acknowledgement} % INCLUDE: acknowledgement
+%\cleardoublepage
 %
 \setcounter{tocdepth}{2}		% define depth of toc
 \tableofcontents				% display table of contents
@@ -62,17 +62,24 @@
 \setcounter{page}{1}			% set page counter
 \pagestyle{maincontentstyle} 	% fancy header and footer
 
-\input{content/chapter-introduction}   % INCLUDE: introduction
-\input{content/chapter-related-work}   % INCLUDE: related work
-\input{content/chapter-system}         % INCLUDE: system
-\input{content/chapter-concepts}       % INCLUDE: concepts
-\input{content/chapter-conclusion}     % INCLUDE: conclusion
+
+\input{content/2-introduction}
+\input{content/3-literature_review}
+\input{content/4-methods}
+\input{content/5-results}
+\input{content/6-discussion}
+\input{content/7-conclusion}
+%\input{content/chapter-introduction}   % INCLUDE: introduction
+%\input{content/chapter-related-work}   % INCLUDE: related work
+%\input{content/chapter-system}         % INCLUDE: system
+%\input{content/chapter-concepts}       % INCLUDE: concepts
+%\input{content/chapter-conclusion}     % INCLUDE: conclusion
 
 % --------------------------
 % Back matter
 % --------------------------
 \appendix\cleardoublepage
-\input{content/chapter-appendix}       % INCLUDE: appendix
+%\input{content/chapter-appendix}       % INCLUDE: appendix
 %
 {%
 \setstretch{1.1}
