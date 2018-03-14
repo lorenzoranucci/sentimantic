@@ -1,0 +1,25 @@
+version: "2"
+services:
+  postgres:
+    image: postgres
+    container_name: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: sentimantic
+      POSTGRES_USER: sentimantic
+      PGDATA: /var/lib/postgresql/data/sentimantic
+    ports:
+      - 54320:5432
+    volumes:
+      - ./.database:/var/lib/postgresql/data/sentimantic
+  miniconda:
+    build: ./
+    depends_on:
+      - postgres
+    container_name: miniconda
+    links:
+      - postgres:localhost
+    tty: true
+    volumes: 
+      - ./:/home/Sentimantic
+    
