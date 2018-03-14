@@ -12,7 +12,6 @@ sudo curl -L https://github.com/docker/compose/releases/download/1.19.0/docker-c
 
 sudo chmod +x /usr/local/bin/docker-compose
 
-
 git clone https://github.com/lorenzoranucci/Sentimantic.git
 
 
