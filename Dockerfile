@@ -16,13 +16,12 @@ RUN apt-get update && \
 
 RUN wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
 RUN chmod +x Miniconda2-latest-Linux-x86_64.sh
-RUN ./Miniconda2-latest-Linux-x86_64.sh -b
-RUN conda create -n py2Env python=2.7 anaconda
+RUN ./Miniconda2-latest-Linux-x86_64.sh -b && \
+	conda create -n py2Env python=2.7 anaconda && \
+	source activate py2Env && \ 
+	conda install numba && \ 
+	cd /home/Sentimantic && \
+	git submodule update --init --recursive && \
+	cd /home/Sentimantic/snorkel && chmod +x set_env.sh && chmod +x install-parser.sh && source activate py2Env && pip install --requirement python-package-requirement.txt && source ./set_env.sh && ./install-parser.sh
 
-RUN cd Sentimantic
-RUN git submodule --init --recursive
-
-RUN cd snorkel
-RUN chmod +x set_env.sh && chmod +x install-parser.sh
-RUN source activate py2Env && conda install numba && pip install --requirement python-package-requirement.txt && source ./set_env.sh && ./install-parser.sh
 
