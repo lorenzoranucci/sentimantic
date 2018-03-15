@@ -1,9 +1,9 @@
 #!/bin/bash
 
 git submodule update --init --recursive
-cd snorkel/
-pip install --requirement python-package-requirement.txt
-chmod +x set_env.sh
+#cd snorkel/
+#pip install --requirement python-package-requirement.txt
+#chmod +x set_env.sh
 chmod +x install-parser.sh
 source activate py2Env
 source set_env.sh
