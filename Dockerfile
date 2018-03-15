@@ -24,8 +24,7 @@ RUN ./Miniconda2-latest-Linux-x86_64.sh -b && \
 	export PATH="/root/miniconda2/bin:${PATH}" && \
 	conda create -n py2Env python=2.7 anaconda && \
 	/bin/bash -c "source activate py2Env" && \
-	conda install numba && \
-	pip install --requirement /home/Sentimantic/python-package-requirement.txt
+	conda install numba # &&	pip install --requirement /home/Sentimantic/python-package-requirement.txt
 	
 	
 
