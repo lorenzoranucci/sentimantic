@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-ENV PATH="/root/miniconda2/bin:${PATH}"
+ENV PATH="/root/anaconda2/bin:${PATH}"
 ENV SNORKELHOME="/home/Sentimantic/snorkel"
 ENV PYTHONPATH="/home/Sentimantic/snorkel:/home/Sentimantic/snorkel/treedlib:/home/Sentimantic/snorkel/sentimantic:${PYTHONPATH}"
 
@@ -18,10 +18,10 @@ RUN apt-get update && \
  apt-get install build-essential python-dev python-virtualenv unzip -y
 
 
-RUN wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
-RUN chmod +x Miniconda2-latest-Linux-x86_64.sh
-RUN ./Miniconda2-latest-Linux-x86_64.sh -b && \
-	export PATH="/root/miniconda2/bin:${PATH}" && \
+RUN wget https://repo.continuum.io/archive/Anaconda2-5.1.0-Linux-x86_64.sh
+RUN chmod +x Anaconda2-5.1.0-Linux-x86_64.sh
+RUN ./Anaconda2-5.1.0-Linux-x86_64.sh -b && \
+	 && \
 	conda create -n py2Env python=2.7 anaconda && \
 	/bin/bash -c "source activate py2Env" && \
 	conda install numba # &&	pip install --requirement /home/Sentimantic/python-package-requirement.txt
