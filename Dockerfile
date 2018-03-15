@@ -21,7 +21,7 @@ RUN apt-get update && \
 RUN wget https://repo.continuum.io/archive/Anaconda2-5.1.0-Linux-x86_64.sh
 RUN chmod +x Anaconda2-5.1.0-Linux-x86_64.sh
 RUN ./Anaconda2-5.1.0-Linux-x86_64.sh -b && \
-	 && \
+	export PATH="/root/anaconda2/bin:${PATH}" && \
 	conda create -n py2Env python=2.7 anaconda && \
 	/bin/bash -c "source activate py2Env" && \
 	conda install numba # &&	pip install --requirement /home/Sentimantic/python-package-requirement.txt
