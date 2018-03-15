@@ -11,13 +11,14 @@ COPY ./ /home/Sentimantic
 
 
 RUN apt-get update && \
+ apt-get install -y wget  && \
  apt-get install -y git  && \
  apt-get install -y bzip2 && \
  apt-get install gcc -y && \
  apt-get install build-essential python-dev python-virtualenv unzip -y
 
 
-RUN curl https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
+RUN wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
 RUN chmod +x Miniconda2-latest-Linux-x86_64.sh
 RUN ./Miniconda2-latest-Linux-x86_64.sh -b && \
 	export PATH="/root/miniconda2/bin:${PATH}" && \
