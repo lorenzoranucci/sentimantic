@@ -4,11 +4,21 @@ FROM continuumio/anaconda
 ENV SNORKELHOME="/home/Sentimantic/snorkel"
 ENV PYTHONPATH="/home/Sentimantic/snorkel:/home/Sentimantic/snorkel/treedlib:${PYTHONPATH}"
 
+RUN apt-get update && \
+ apt-get install -y wget  && \
+ apt-get install -y git  && \
+ apt-get install -y bzip2 && \
+ apt-get install gcc -y && \
+ apt-get install build-essential python-dev python-virtualenv unzip -y
+
+
 RUN mkdir /home/Sentimantic
 WORKDIR /home/Sentimantic
 COPY ./ /home/Sentimantic
 
-
+RUN conda create -n py2Env python=2.7 anaconda
+RUN /bin/bash -c "source activate py2Env" && conda install numba 
+RUN cd /home/Sentimantic && pip install --requirement python-package-requirement.txt
 
 
 
