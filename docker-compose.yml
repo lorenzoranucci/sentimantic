@@ -12,13 +12,12 @@ services:
       - 54320:5432
     volumes:
       - ./.database:/var/lib/postgresql/data/sentimantic
-  miniconda:
+  sentimantic:
+    image: lorenzoranucci/sentimantic
     build: ./
     depends_on:
       - postgres
-    container_name: miniconda
-    links:
-      - postgres:localhost
+    container_name: sentimantic
     tty: true
     volumes: 
       - ./:/home/Sentimantic
