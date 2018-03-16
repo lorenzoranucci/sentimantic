@@ -1,8 +1,0 @@
-2018-03-15 13:31:41,135 Pipeline start
-2018-03-15 13:31:41,135 Saving predicate "http://dbpedia.org/ontology/birthPlace"
-2018-03-15 13:31:41,170 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
-2018-03-15 13:31:41,170 Predicate "http://dbpedia.org/ontology/birthPlace" saved
-2018-03-15 13:34:34,771 Pipeline start
-2018-03-15 13:34:34,771 Saving predicate "http://dbpedia.org/ontology/birthPlace"
-2018-03-15 13:34:34,804 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
-2018-03-15 13:34:34,804 Predicate "http://dbpedia.org/ontology/birthPlace" saved
