@@ -1,6 +1,5 @@
 #!/bin/bash
 
-source activate py2Env
 
 #Extract text with Wikiextractor
 if [ ! -e "./data/wikipedia/dump/en/extracted_text/complete.xml" ]; then
@@ -12,5 +11,5 @@ fi
 
 cd snorkel/sentimantic/
 #run pipeline
-python snorkel/sentimantic/complete_pipeline.py parse infer download extract label train test clear parallelism 32
+python ./complete_pipeline.py parse infer download extract label train test clear parallelism 32
 
