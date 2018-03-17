@@ -18,7 +18,7 @@ WORKDIR /home/Sentimantic
 COPY ./ /home/Sentimantic
 
 RUN conda create -n py2Env python=2.7 anaconda
-RUN [ “/bin/bash”, “-c”, “source activate py2Env && conda install numba &&  cd /home/Sentimantic && pip install --requirement python-package-requirement.txt” ]
+RUN /bin/bash -c 'source activate py2Env && conda install numba &&  cd /home/Sentimantic && pip install --requirement python-package-requirement.txt && pip show spacy'
 
 
 
