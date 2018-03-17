@@ -1,4 +1,4 @@
-version: "2"
+version: "2.2"
 services:
   postgres:
     image: postgres
@@ -13,12 +13,10 @@ services:
     volumes:
       - ./.database:/var/lib/postgresql/data/sentimantic
   lookup:
-    container_name: lookup
     image: dbpedia/lookup
-    ports:
-     - "1111:1111"
     command: java -jar /opt/lookup/dbpedia-lookup-3.1-jar-with-dependencies.jar /opt/lookup/2015-10/
     restart: always
+    scale: 16
   sentimantic:
     image: lorenzoranucci/sentimantic
     build: ./
@@ -29,5 +27,14 @@ services:
     tty: true
     volumes: 
       - ./:/home/Sentimantic
+    restart: always
+  lb:
+    image: dockercloud/haproxy
+    links:
+      - lookup
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - 1111:80
     restart: always
     
