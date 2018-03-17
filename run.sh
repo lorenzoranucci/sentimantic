@@ -10,6 +10,7 @@ if [ ! -e "./data/wikipedia/dump/en/extracted_text/complete.xml" ]; then
 	echo "</documents>" >> ./data/wikipedia/dump/en/extracted_text/AA/wiki_00.xml
 fi
 
+cd snorkel/sentimantic/
 #run pipeline
-python snorkel/sentimantic/complete_pipeline.py 
+python snorkel/sentimantic/complete_pipeline.py parse infer download extract label train test clear parallelism 32
 
