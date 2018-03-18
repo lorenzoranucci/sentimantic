@@ -1,4 +1,4 @@
-version: "2.2"
+version: '3'
 services:
   postgres:
     image: postgres
@@ -16,25 +16,50 @@ services:
     image: dbpedia/lookup
     command: java -jar /opt/lookup/dbpedia-lookup-3.1-jar-with-dependencies.jar /opt/lookup/2015-10/
     restart: always
-    scale: 16
-  sentimantic:
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: on-failure
+    networks:
+      - dbpedia_net
+    ports:
+      - "1111:1111"
+  py2Env:
     image: lorenzoranucci/sentimantic
     build: ./
     depends_on:
       - postgres
       - lookup
-    container_name: sentimantic
+    container_name: py2Env
     tty: true
     volumes: 
       - ./:/home/Sentimantic
+    networks:
+      - dbpedia_net
     restart: always
-  lb:
-    image: dockercloud/haproxy
-    links:
-      - lookup
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-    ports:
-      - 1111:80
-    restart: always
+#  dbpedia_en:
+#    image: lorenzoranucci/dbpedia
+#    tty: true
+#    restart: always
+#    volumes:
+#      - ./data/dbpedia/docker/dump:/dbpedia-download
+#    deploy:
+#      replicas: 1
+#      restart_policy:
+#        condition: on-failure
+#    networks:
+#      - dbpedia_net
+#    ports:
+      - "8891:8891"
+#  lb:
+#    image: dockercloud/haproxy
+#    links:
+#      - lookup
+#    volumes:
+#      - /var/run/docker.sock:/var/run/docker.sock
+#    ports:
+#      - 1111:80
+#    restart: always
     
+networks:
+  dbpedia_net:
