@@ -37,20 +37,6 @@ services:
     networks:
       - dbpedia_net
     restart: always
-#  dbpedia_en:
-#    image: lorenzoranucci/dbpedia
-#    tty: true
-#    restart: always
-#    volumes:
-#      - ./data/dbpedia/docker/dump:/dbpedia-download
-#    deploy:
-#      replicas: 1
-#      restart_policy:
-#        condition: on-failure
-#    networks:
-#      - dbpedia_net
-#    ports:
-      - "8891:8891"
 #  lb:
 #    image: dockercloud/haproxy
 #    links:
