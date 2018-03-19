@@ -2,7 +2,6 @@ version: '3'
 services:
   postgres:
     image: postgres
-    container_name: postgres
     restart: always
     environment:
       POSTGRES_PASSWORD: sentimantic
@@ -12,16 +11,18 @@ services:
       - 54320:5432
     volumes:
       - ./.database:/var/lib/postgresql/data/sentimantic
+    networks:
+      - database
   lookup:
     image: dbpedia/lookup
     command: java -jar /opt/lookup/dbpedia-lookup-3.1-jar-with-dependencies.jar /opt/lookup/2015-10/
     restart: always
     deploy:
-      replicas: 2
+      replicas: 32
       restart_policy:
         condition: on-failure
     networks:
-      - dbpedia_net
+      - lookup
     ports:
       - "1111:1111"
   py2Env:
@@ -35,17 +36,10 @@ services:
     volumes: 
       - ./:/home/Sentimantic
     networks:
-      - dbpedia_net
+      - database
+      - lookup
     restart: always
-#  lb:
-#    image: dockercloud/haproxy
-#    links:
-#      - lookup
-#    volumes:
-#      - /var/run/docker.sock:/var/run/docker.sock
-#    ports:
-#      - 1111:80
-#    restart: always
-    
+
 networks:
-  dbpedia_net:
+  lookup:
+  database:
