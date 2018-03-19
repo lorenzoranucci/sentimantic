@@ -3,5 +3,5 @@
 
 cd snorkel/sentimantic/
 #run pipeline
-python complete_pipeline.py train test clear parallelism 32
+python complete_pipeline.py train test  parallelism 64
 
