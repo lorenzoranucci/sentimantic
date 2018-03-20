@@ -48,7 +48,7 @@ services:
       BRAT_USERNAME: brat
       BRAT_EMAIL: lorenzofranco.ranucci@gmail.com
     ports:
-      - "8002:80"
+      - "8001:80"
 
 networks:
   lookup:
