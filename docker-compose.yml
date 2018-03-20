@@ -1,7 +1,8 @@
-version: '3'
+version: "2.2"
 services:
   postgres:
     image: postgres
+    container_name: postgres
     restart: always
     environment:
       POSTGRES_PASSWORD: sentimantic
@@ -11,45 +12,39 @@ services:
       - 54320:5432
     volumes:
       - ./.database:/var/lib/postgresql/data/sentimantic
-    networks:
-      - database
   lookup:
     image: dbpedia/lookup
     command: java -jar /opt/lookup/dbpedia-lookup-3.1-jar-with-dependencies.jar /opt/lookup/2015-10/
     restart: always
-    deploy:
-      replicas: 32
-      restart_policy:
-        condition: on-failure
-    networks:
-      - lookup
-    ports:
-      - "1111:1111"
-  py2Env:
+    scale: 32
+  sentimantic:
     image: lorenzoranucci/sentimantic
     build: ./
     depends_on:
       - postgres
       - lookup
+    container_name: sentimantic
     tty: true
-    volumes: 
+    volumes:
       - ./:/home/Sentimantic
-    networks:
-      - database
-      - lookup
     restart: always
   brat:
-    image: cassj/brat
+      image: cassj/brat
+      volumes:
+        - ./snorkel/snorkel/contrib/brat/brat-v1.3_Crunchy_Frog/data:/bratdata
+        - ./snorkel/snorkel/contrib/brat/brat-v1.3_Crunchy_Frog/configurations:/bratcfg
+      environment:
+        BRAT_PASSWORD: brat
+        BRAT_USERNAME: brat
+        BRAT_EMAIL: lorenzofranco.ranucci@gmail.com
+      ports:
+        - "8001:80"
+  lb:
+    image: dockercloud/haproxy
+    links:
+      - lookup
     volumes:
-      - ./snorkel/snorkel/contrib/brat/brat-v1.3_Crunchy_Frog/data:/bratdata
-      - ./snorkel/snorkel/contrib/brat/brat-v1.3_Crunchy_Frog/configurations:/bratcfg
-    environment:
-      BRAT_PASSWORD: brat
-      BRAT_USERNAME: brat
-      BRAT_EMAIL: lorenzofranco.ranucci@gmail.com
+      - /var/run/docker.sock:/var/run/docker.sock
     ports:
-      - "8001:80"
-
-networks:
-  lookup:
-  database:
+      - 1111:80
+    restart: always
