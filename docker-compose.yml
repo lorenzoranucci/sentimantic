@@ -31,7 +31,6 @@ services:
     depends_on:
       - postgres
       - lookup
-    container_name: py2Env
     tty: true
     volumes: 
       - ./:/home/Sentimantic
@@ -39,6 +38,17 @@ services:
       - database
       - lookup
     restart: always
+  brat:
+    image: cassj/brat
+    volumes:
+      - ./snorkel/snorkel/contrib/brat/brat-v1.3_Crunchy_Frog/data:/bratdata
+      - ./snorkel/snorkel/contrib/brat/brat-v1.3_Crunchy_Frog/configurations:/bratcfg
+    environment:
+      BRAT_PASSWORD: brat
+      BRAT_USERNAME: brat
+      BRAT_EMAIL: lorenzofranco.ranucci@gmail.com
+    ports:
+      - "8002:80"
 
 networks:
   lookup:
