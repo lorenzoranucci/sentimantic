@@ -23,7 +23,6 @@ services:
       restart_policy:
         condition: on-failure
     networks:
-      - hostnet
       - lookup
     ports:
       - "1111:1111"
@@ -54,6 +53,3 @@ services:
 networks:
   lookup:
   database:
-  hostnet:
-      external:
-        name: host
