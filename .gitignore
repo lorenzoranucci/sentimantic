@@ -48,3 +48,6 @@ fabric.properties
 
 
 .database/*
+
+*.pem
+*.backup
