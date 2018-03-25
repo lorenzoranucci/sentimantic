@@ -9,6 +9,12 @@ docker-compose build
 
 ###Run project stack
 
+Swarm init:
+
+
+
+```docker swarm init```
+
 Deploy:
 
 ```docker stack deploy -c docker-compose.yml sentimantic```
@@ -23,5 +29,8 @@ Execute main container's bash:
 
 Re-deploy:
 
-```docker stack rm sentimantic
-docker stack deploy -c docker-compose.yml sentimantic```
+```docker swarm leave --force```
+
+```docker stack rm sentimantic ```
+
+```docker stack deploy -c docker-compose.yml sentimantic ```
