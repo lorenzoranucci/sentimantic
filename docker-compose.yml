@@ -12,8 +12,8 @@ services:
       replicas: 1
       restart_policy:
         condition: on-failure
-#    volumes:
-#      - ./.database:/var/lib/postgresql/data/sentimantic
+    volumes:
+      - ./.database:/var/lib/postgresql/data/sentimantic
   lookup:
     image: dbpedia/lookup
     command: java -jar /opt/lookup/dbpedia-lookup-3.1-jar-with-dependencies.jar /opt/lookup/2015-10/
