@@ -8,26 +8,22 @@ services:
       PGDATA: /var/lib/postgresql/data/sentimantic
     ports:
       - "54320:5432"
-    volumes:
-      - ./.database:/var/lib/postgresql/data/sentimantic
-    networks:
-      - database
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+#    volumes:
+#      - ./.database:/var/lib/postgresql/data/sentimantic
   lookup:
     image: dbpedia/lookup
     command: java -jar /opt/lookup/dbpedia-lookup-3.1-jar-with-dependencies.jar /opt/lookup/2015-10/
     deploy:
       replicas: 4
-      resources:
-        limits:
-          cpus: "0.5"
-          memory: 5G
       update_config:
         parallelism: 4
         delay: 20s
       restart_policy:
         condition: on-failure
-    networks:
-      - webnet
     ports:
       - "1111:1111"
   py2Env:
@@ -39,9 +35,6 @@ services:
     tty: true
     volumes:
       - ./:/home/Sentimantic
-    networks:
-      - database
-      - webnet
   brat:
     image: cassj/brat
     volumes:
@@ -53,9 +46,3 @@ services:
       BRAT_EMAIL: lorenzofranco.ranucci@gmail.com
     ports:
       - "8001:80"
-    networks:
-      - webnet
-
-networks:
-  webnet:
-  database:
