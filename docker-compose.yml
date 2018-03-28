@@ -18,9 +18,9 @@ services:
     image: dbpedia/lookup
     command: java -jar /opt/lookup/dbpedia-lookup-3.1-jar-with-dependencies.jar /opt/lookup/2015-10/
     deploy:
-      replicas: 4
+      replicas: 128
       update_config:
-        parallelism: 4
+        parallelism: 128
         delay: 20s
       restart_policy:
         condition: on-failure
