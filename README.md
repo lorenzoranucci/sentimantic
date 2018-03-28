@@ -34,3 +34,6 @@ Re-deploy:
 ```docker stack rm sentimantic ```
 
 ```docker stack deploy -c docker-compose.yml sentimantic ```
+
+###Run project
+
