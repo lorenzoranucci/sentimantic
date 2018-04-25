@@ -1,9 +1,9 @@
 #!/bin/bash
 
 
-cd snorkel/sentimantic/
+cd src
 #run pipeline
 python complete_pipeline.py download extract setup label train_gen train_disc test parallelism 64 page_size 100000
 
-cd ../snorkel/contrib/brat/brat-v1.3_Crunchy_Frog/data/
+cd ../snorkel/snorkel/contrib/brat/brat-v1.3_Crunchy_Frog/data/
 chown -R www-data:www-data ./*

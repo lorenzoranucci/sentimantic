@@ -1,0 +1,1244 @@
+2018-03-27 15:21:00,745 Pipeline start
+2018-03-27 15:21:00,816 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-27 15:21:00,889 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-27 15:21:00,889 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-27 15:21:00,959 Starting downloading samples for predicate "http://dbpedia.org/ontology/birthPlace" domain "http://dbpedia.org/ontology/Person", range "http://dbpedia.org/ontology/Place"
+2018-03-27 15:28:13,686 Pipeline start
+2018-03-27 15:28:13,752 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-27 15:28:13,822 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-27 15:28:13,822 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-27 15:28:17,240 Starting downloading samples for predicate "http://dbpedia.org/ontology/birthPlace" domain "http://dbpedia.org/ontology/Person", range "http://dbpedia.org/ontology/Place"
+2018-03-27 15:28:23,801 Samples download config is false, skipping....
+2018-03-27 15:28:29,383 Saving predicate "http://dbpedia.org/ontology/spouse"
+2018-03-27 15:28:29,398 Predicate "http://dbpedia.org/ontology/spouse" already existing
+2018-03-27 15:28:29,398 Predicate "http://dbpedia.org/ontology/spouse" saved
+2018-03-27 15:28:32,166 Starting downloading samples for predicate "http://dbpedia.org/ontology/spouse" domain "http://dbpedia.org/ontology/Person", range "http://dbpedia.org/ontology/Person"
+2018-03-27 15:30:06,400 Exception during reset or similar
+Traceback (most recent call last):
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 687, in _finalize_fairy
+    fairy._reset(pool)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 829, in _reset
+    pool._dialect.do_rollback(self)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 440, in do_rollback
+    dbapi_connection.rollback()
+OperationalError: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+2018-03-27 15:30:06,991 Exception during reset or similar
+Traceback (most recent call last):
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 687, in _finalize_fairy
+    fairy._reset(pool)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 829, in _reset
+    pool._dialect.do_rollback(self)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 440, in do_rollback
+    dbapi_connection.rollback()
+OperationalError: SSL error: decryption failed or bad record mac
+
+2018-03-27 15:34:18,629 Finished downloading samples for predicate "http://dbpedia.org/ontology/spouse" domain "http://dbpedia.org/ontology/Person", range "http://dbpedia.org/ontology/Person"
+2018-03-27 15:34:18,630 Saving predicate "http://dbpedia.org/ontology/team"
+2018-03-27 15:34:18,644 Predicate "http://dbpedia.org/ontology/team" already existing
+2018-03-27 15:34:18,644 Predicate "http://dbpedia.org/ontology/team" saved
+2018-03-27 15:34:26,797 Starting downloading samples for predicate "http://dbpedia.org/ontology/team" domain "http://dbpedia.org/ontology/Person", range "http://dbpedia.org/ontology/Organisation"
+2018-03-27 16:27:52,526 Pipeline start
+2018-03-27 16:28:21,731 Pipeline start
+2018-03-27 16:28:21,840 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-27 16:28:21,912 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-27 16:28:21,912 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-27 16:32:02,479 Pipeline start
+2018-03-27 16:32:02,587 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-27 16:32:02,651 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-27 16:32:02,651 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-27 16:32:02,718 Starting dev setup
+2018-03-27 16:32:02,719 Downloading articles
+2018-03-27 16:32:02,719 Articles download start
+2018-03-27 16:32:05,793 Exception during reset or similar
+Traceback (most recent call last):
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 687, in _finalize_fairy
+    fairy._reset(pool)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 829, in _reset
+    pool._dialect.do_rollback(self)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 440, in do_rollback
+    dbapi_connection.rollback()
+OperationalError: SSL SYSCALL error: EOF detected
+
+2018-03-27 16:32:09,140 Kevin Campbell page not saved
+2018-03-27 16:32:21,634 Peter Clark page not saved
+2018-03-27 16:32:37,913 Daniel Crowley page not saved
+2018-03-27 16:32:39,451 George Curtis page not saved
+2018-03-27 16:33:15,153 Articles download end
+2018-03-27 16:33:15,153 Parsing
+2018-03-27 16:33:15,153 Corpus parsing start
+2018-03-27 16:33:17,705 Already parsed Santi_Cazorla.xml
+2018-03-27 16:33:37,970 Already parsed Leslie_Compton.xml
+2018-03-27 16:33:38,035 Already parsed Alf_Common.xml
+2018-03-27 16:33:59,392 Already parsed Patrick_Cregg.xml
+2018-03-27 16:34:00,241 Already parsed Elon_Musk.xml
+2018-03-27 16:34:20,820 Already parsed Denis_Compton.xml
+2018-03-27 16:35:15,775 Already parsed Ashley_Cole.xml
+2018-03-27 16:35:15,871 Already parsed Calum_Chambers.xml
+2018-03-27 16:35:37,894 Already parsed Sol_Campbell.xml
+2018-03-27 16:35:39,370 Already parsed George_H._W._Bush.xml
+2018-03-27 16:35:40,443 Already parsed Bill_Clinton.xml
+2018-03-27 16:35:41,919 Already parsed Herbert_Hoover.xml
+2018-03-27 16:35:42,208 Already parsed Andy_Cole.xml
+2018-03-27 16:35:43,769 Already parsed Dwight_D._Eisenhower.xml
+2018-03-27 16:35:45,065 Already parsed Franklin_D._Roosevelt.xml
+2018-03-27 16:36:11,452 Already parsed Grover_Cleveland.xml
+2018-03-27 16:36:32,839 Already parsed Petr_ech.xml
+2018-03-27 16:36:53,560 Already parsed Mel_Charles.xml
+2018-03-27 16:37:18,136 Already parsed Calvin_Coolidge.xml
+2018-03-27 16:37:35,925 Already parsed Jimmy_Carter.xml
+2018-03-27 16:37:36,011 Already parsed Samir_Carruthers.xml
+2018-03-27 16:37:36,066 Already parsed Jack_Crayston.xml
+2018-03-27 16:37:51,631 Already parsed Matthew_Connolly.xml
+2018-03-27 16:37:51,814 Already parsed Linus_Torvalds.xml
+2018-03-27 16:38:27,707 Already parsed Francis_Coquelin.xml
+2018-03-27 16:38:27,819 Already parsed Lee_Chapman.xml
+2018-03-27 16:38:27,883 Already parsed Pascal_Cygan.xml
+2018-03-27 16:38:27,939 Already parsed Eddie_Clamp.xml
+2018-03-27 16:38:28,002 Already parsed Tim_Coleman.xml
+2018-03-27 16:38:28,081 Already parsed Wilf_Copping.xml
+2018-03-27 16:38:44,866 Already parsed Marouane_Chamakh.xml
+2018-03-27 16:38:45,461 Already parsed Zinedine_Zidane.xml
+2018-03-27 16:38:45,461 Corpus parsing end
+2018-03-27 16:38:45,461 Extracting
+2018-03-27 16:38:45,462 Starting candidates extraction 
+2018-03-27 16:38:45,462 Count candidates
+2018-03-27 16:38:45,552 Deleting candidates
+2018-03-27 16:38:46,149 Counting sentences
+2018-03-27 16:38:47,194 	Quering sentences from 0 to 10000, in set '1'
+2018-03-27 16:38:50,942 Extracting
+2018-03-27 16:49:48,402 Pipeline start
+2018-03-27 16:49:48,600 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-27 16:49:48,732 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-27 16:49:48,732 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-27 16:49:48,733 Starting infering predicate "http://dbpedia.org/ontology/birthPlace" domain, range and candidates types 
+2018-03-27 16:49:51,822 Finished infering predicate "http://dbpedia.org/ontology/birthPlace" domain, range and candidates types 
+2018-03-27 16:49:51,887 Saving predicate "http://dbpedia.org/ontology/spouse"
+2018-03-27 16:49:51,899 Predicate "http://dbpedia.org/ontology/spouse" already existing
+2018-03-27 16:49:51,899 Predicate "http://dbpedia.org/ontology/spouse" saved
+2018-03-27 16:49:51,900 Starting infering predicate "http://dbpedia.org/ontology/spouse" domain, range and candidates types 
+2018-03-27 16:51:27,853 		candidates extracted for PERSONGPE
+2018-03-27 16:51:27,853 	Quering sentences from 10000 to 20000, in set '1'
+2018-03-27 16:51:29,648 Extracting
+2018-03-27 16:53:56,293 Finished infering predicate "http://dbpedia.org/ontology/spouse" domain, range and candidates types 
+2018-03-27 16:53:56,372 Saving predicate "http://dbpedia.org/ontology/team"
+2018-03-27 16:53:56,384 Predicate "http://dbpedia.org/ontology/team" already existing
+2018-03-27 16:53:56,385 Predicate "http://dbpedia.org/ontology/team" saved
+2018-03-27 16:53:56,385 Starting infering predicate "http://dbpedia.org/ontology/team" domain, range and candidates types 
+2018-03-27 16:54:01,279 Finished infering predicate "http://dbpedia.org/ontology/team" domain, range and candidates types 
+2018-03-27 16:54:32,221 Pipeline start
+2018-03-27 16:54:32,349 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-27 16:54:32,425 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-27 16:54:32,425 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-27 16:54:35,276 Starting downloading samples for predicate "http://dbpedia.org/ontology/birthPlace" domain "http://dbpedia.org/ontology/Person", range "http://dbpedia.org/ontology/Place"
+2018-03-27 16:54:35,276 Samples download config is false, skipping....
+2018-03-27 16:54:35,276 Saving predicate "http://dbpedia.org/ontology/spouse"
+2018-03-27 16:54:35,290 Predicate "http://dbpedia.org/ontology/spouse" already existing
+2018-03-27 16:54:35,290 Predicate "http://dbpedia.org/ontology/spouse" saved
+2018-03-27 16:54:40,613 Starting downloading samples for predicate "http://dbpedia.org/ontology/spouse" domain "http://dbpedia.org/ontology/Person", range "http://dbpedia.org/ontology/Person"
+2018-03-27 16:55:02,376 Finished downloading samples for predicate "http://dbpedia.org/ontology/spouse" domain "http://dbpedia.org/ontology/Person", range "http://dbpedia.org/ontology/Person"
+2018-03-27 16:55:02,378 Saving predicate "http://dbpedia.org/ontology/team"
+2018-03-27 16:55:02,393 Predicate "http://dbpedia.org/ontology/team" already existing
+2018-03-27 16:55:02,393 Predicate "http://dbpedia.org/ontology/team" saved
+2018-03-27 16:55:02,463 Starting downloading samples for predicate "http://dbpedia.org/ontology/team" domain "http://dbpedia.org/ontology/Person", range "http://dbpedia.org/ontology/Organisation"
+2018-03-27 16:55:31,297 Pipeline start
+2018-03-27 16:55:31,411 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-27 16:55:31,481 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-27 16:55:31,481 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-27 16:55:31,549 Starting downloading samples for predicate "http://dbpedia.org/ontology/birthPlace" domain "http://dbpedia.org/ontology/Person", range "http://dbpedia.org/ontology/Place"
+2018-03-27 16:55:31,549 Samples download config is false, skipping....
+2018-03-27 16:55:31,550 Saving predicate "http://dbpedia.org/ontology/spouse"
+2018-03-27 16:55:31,563 Predicate "http://dbpedia.org/ontology/spouse" already existing
+2018-03-27 16:55:31,563 Predicate "http://dbpedia.org/ontology/spouse" saved
+2018-03-27 16:55:31,626 Starting downloading samples for predicate "http://dbpedia.org/ontology/spouse" domain "http://dbpedia.org/ontology/Person", range "http://dbpedia.org/ontology/Person"
+2018-03-27 16:56:19,930 		candidates extracted for PERSONGPE
+2018-03-27 16:56:19,930 	Quering sentences from 20000 to 30000, in set '1'
+2018-03-27 16:56:21,157 Extracting
+2018-03-27 16:56:21,157 Finished candidates extraction 
+2018-03-27 16:56:25,185 Deleting dump files
+2018-03-27 16:56:25,187 Finish
+2018-03-27 16:56:25,399 Starting test setup
+2018-03-27 16:56:25,399 Downloading articles
+2018-03-27 16:56:25,399 Articles download start
+2018-03-27 16:56:40,328 Francesco Totti: Dump file already exists
+2018-03-27 16:57:54,690 Articles download end
+2018-03-27 16:57:54,691 Parsing
+2018-03-27 16:57:54,691 Corpus parsing start
+2018-03-27 16:57:58,141 Already parsed Rita_Levi-Montalcini.xml
+2018-03-27 16:58:17,073 Already parsed Andrew_Jackson.xml
+2018-03-27 16:58:17,320 Already parsed Archie_Roe.xml
+2018-03-27 16:58:18,866 Already parsed George_Washington.xml
+2018-03-27 16:58:39,670 Already parsed Jock_Robson.xml
+2018-03-27 16:58:40,644 Already parsed Alessandro_Del_Piero.xml
+2018-03-27 16:58:59,534 Already parsed Dennis_Ritchie.xml
+2018-03-27 16:58:59,608 Already parsed Ronnie_Rooke.xml
+2018-03-27 16:59:15,018 Already parsed Tommy_Rudkin.xml
+2018-03-27 16:59:15,487 Already parsed Leigh_Richmond_Roose.xml
+2018-03-27 16:59:21,277 Already parsed Philip_Roberts.xml
+2018-03-27 16:59:21,379 Already parsed Wilf_Rostron.xml
+2018-03-27 16:59:21,470 Already parsed Don_Roper.xml
+2018-03-27 16:59:22,739 Already parsed James_Madison.xml
+2018-03-27 16:59:23,809 Already parsed Tyrell_Robinson.xml
+2018-03-27 16:59:51,741 Already parsed Carlo_Ancelotti.xml
+2018-03-27 16:59:53,393 Already parsed George_Roger_Waters.xml
+2018-03-27 16:59:55,421 Already parsed Matt_Groening.xml
+2018-03-27 16:59:57,416 Already parsed Andrew_Johnson.xml
+2018-03-27 17:00:26,680 Already parsed Stewart_Robson.xml
+2018-03-27 17:00:28,985 Already parsed David_Jon_Gilmour.xml
+2018-03-27 17:00:30,612 Already parsed Hal_Robson-Kanu.xml
+2018-03-27 17:00:34,781 Already parsed James_Monroe.xml
+2018-03-27 17:00:41,244 Already parsed Anthony_Kiedis.xml
+2018-03-27 17:00:48,468 Already parsed John_Quincy_Adams.xml
+2018-03-27 17:01:00,594 Already parsed Grover_Cleveland.xml
+2018-03-27 17:01:48,514 Already parsed James_K._Polk.xml
+2018-03-27 17:02:00,142 Already parsed Francesco_Totti.xml
+2018-03-27 17:02:31,567 Already parsed David_Rocastle.xml
+2018-03-27 17:02:31,873 Already parsed Trevor_Ross.xml
+2018-03-27 17:02:40,201 Already parsed Jimmy_Page.xml
+2018-03-27 17:03:08,394 Already parsed Don_Rossiter.xml
+2018-03-27 17:03:09,783 Already parsed Jock_Rutherford.xml
+2018-03-27 17:03:10,387 Already parsed Ehud_Rogers.xml
+2018-03-27 17:03:16,460 Already parsed Martin_Van_Buren.xml
+2018-03-27 17:03:18,397 Already parsed Abraham_Lincoln.xml
+2018-03-27 17:03:18,419 Already parsed Hope_Robertson.xml
+2018-03-27 17:03:53,806 Already parsed Robert_Plant.xml
+2018-03-27 17:04:16,337 Corpus parsing end
+2018-03-27 17:04:16,337 Extracting
+2018-03-27 17:04:16,337 Starting candidates extraction 
+2018-03-27 17:04:16,338 Count candidates
+2018-03-27 17:04:16,354 Deleting candidates
+2018-03-27 17:04:17,541 Counting sentences
+2018-03-27 17:04:37,851 	Quering sentences from 0 to 10000, in set '2'
+2018-03-27 17:04:43,032 Extracting
+2018-03-27 17:16:25,412 		candidates extracted for PERSONGPE
+2018-03-27 17:16:25,413 	Quering sentences from 10000 to 20000, in set '2'
+2018-03-27 17:16:27,239 Extracting
+2018-03-27 17:20:17,586 		candidates extracted for PERSONGPE
+2018-03-27 17:20:17,586 	Quering sentences from 20000 to 30000, in set '2'
+2018-03-27 17:20:18,624 Extracting
+2018-03-27 17:20:18,625 Finished candidates extraction 
+2018-03-27 17:20:23,481 Deleting dump files
+2018-03-27 17:20:23,506 Finish
+2018-03-27 17:20:23,506 Saving predicate "http://dbpedia.org/ontology/spouse"
+2018-03-27 17:20:23,582 Predicate "http://dbpedia.org/ontology/spouse" already existing
+2018-03-27 17:20:23,582 Predicate "http://dbpedia.org/ontology/spouse" saved
+2018-03-27 17:20:23,866 Starting dev setup
+2018-03-27 17:20:23,867 Downloading articles
+2018-03-27 17:20:23,867 Articles download start
+2018-03-27 17:20:30,050 Kevin Campbell page not saved
+2018-03-27 17:20:45,302 Peter Clark page not saved
+2018-03-27 17:21:01,985 Daniel Crowley page not saved
+2018-03-27 17:21:03,531 George Curtis page not saved
+2018-03-27 17:21:39,631 Articles download end
+2018-03-27 17:21:39,632 Parsing
+2018-03-27 17:21:39,632 Corpus parsing start
+2018-03-27 17:21:42,109 Already parsed Santi_Cazorla.xml
+2018-03-27 17:21:43,581 Already parsed William_H._Taft.xml
+2018-03-27 17:21:43,675 Already parsed Leslie_Compton.xml
+2018-03-27 17:21:43,739 Already parsed Alf_Common.xml
+2018-03-27 17:21:45,097 Already parsed Warren_G._Harding.xml
+2018-03-27 17:21:45,158 Already parsed Patrick_Cregg.xml
+2018-03-27 17:21:46,221 Already parsed Elon_Musk.xml
+2018-03-27 17:21:47,541 Already parsed George_W._Bush.xml
+2018-03-27 17:21:47,814 Already parsed Denis_Compton.xml
+2018-03-27 17:21:48,808 Already parsed Benjamin_Harrison.xml
+2018-03-27 17:21:50,055 Already parsed Richard_Nixon.xml
+2018-03-27 17:21:51,513 Already parsed Ronald_Reagan.xml
+2018-03-27 17:21:51,826 Already parsed Ashley_Cole.xml
+2018-03-27 17:21:51,923 Already parsed Calum_Chambers.xml
+2018-03-27 17:21:53,442 Already parsed Woodrow_Wilson.xml
+2018-03-27 17:21:53,837 Already parsed Sol_Campbell.xml
+2018-03-27 17:21:55,276 Already parsed George_H._W._Bush.xml
+2018-03-27 17:21:56,505 Already parsed Bill_Clinton.xml
+2018-03-27 17:21:57,737 Already parsed Herbert_Hoover.xml
+2018-03-27 17:21:58,019 Already parsed Andy_Cole.xml
+2018-03-27 17:21:59,665 Already parsed Dwight_D._Eisenhower.xml
+2018-03-27 17:22:00,961 Already parsed Franklin_D._Roosevelt.xml
+2018-03-27 17:22:02,694 Already parsed Lyndon_B._Johnson.xml
+2018-03-27 17:22:03,579 Already parsed Grover_Cleveland.xml
+2018-03-27 17:22:05,234 Already parsed Theodore_Roosevelt.xml
+2018-03-27 17:22:05,928 Already parsed Petr_ech.xml
+2018-03-27 17:22:08,419 Already parsed Donald_Trump.xml
+2018-03-27 17:22:08,953 Already parsed Mel_Charles.xml
+2018-03-27 17:22:10,675 Already parsed John_F._Kennedy.xml
+2018-03-27 17:22:11,343 Already parsed Calvin_Coolidge.xml
+2018-03-27 17:22:12,595 Already parsed Gerald_Ford.xml
+2018-03-27 17:22:14,056 Already parsed Jimmy_Carter.xml
+2018-03-27 17:22:14,148 Already parsed Samir_Carruthers.xml
+2018-03-27 17:22:14,252 Already parsed Jack_Crayston.xml
+2018-03-27 17:22:15,292 Already parsed William_McKinley.xml
+2018-03-27 17:22:15,383 Already parsed Matthew_Connolly.xml
+2018-03-27 17:22:15,585 Already parsed Linus_Torvalds.xml
+2018-03-27 17:22:17,413 Already parsed Harry_S._Truman.xml
+2018-03-27 17:22:17,578 Already parsed Francis_Coquelin.xml
+2018-03-27 17:22:17,685 Already parsed Lee_Chapman.xml
+2018-03-27 17:22:17,751 Already parsed Pascal_Cygan.xml
+2018-03-27 17:22:17,819 Already parsed Eddie_Clamp.xml
+2018-03-27 17:22:17,881 Already parsed Tim_Coleman.xml
+2018-03-27 17:22:17,953 Already parsed Wilf_Copping.xml
+2018-03-27 17:22:19,199 Already parsed Barack_Obama.xml
+2018-03-27 17:22:19,536 Already parsed Marouane_Chamakh.xml
+2018-03-27 17:22:20,096 Already parsed Zinedine_Zidane.xml
+2018-03-27 17:22:20,096 Corpus parsing end
+2018-03-27 17:22:20,097 Extracting
+2018-03-27 17:22:20,097 Starting candidates extraction 
+2018-03-27 17:22:20,098 Count candidates
+2018-03-27 17:22:20,156 Deleting candidates
+2018-03-27 17:22:21,464 Counting sentences
+2018-03-27 17:22:22,328 	Quering sentences from 0 to 10000, in set '1'
+2018-03-27 17:22:25,750 Extracting
+2018-03-27 17:31:15,839 Pipeline start
+2018-03-27 17:31:15,953 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-27 17:31:16,020 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-27 17:31:16,020 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-27 17:31:16,105 Starting labeling 
+2018-03-27 17:32:40,786 Finished labeling 
+2018-03-27 17:38:14,327 Pipeline start
+2018-03-27 17:38:14,437 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-27 17:38:14,504 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-27 17:38:14,504 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-27 17:38:14,574 Starting labeling 
+2018-03-27 17:38:35,880 Finished labeling 
+2018-03-27 17:45:01,955 Pipeline start
+2018-03-27 17:45:02,069 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-27 17:45:02,136 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-27 17:45:02,136 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-27 17:45:02,201 Starting labeling 
+2018-03-27 17:47:55,599 Finished labeling 
+2018-03-27 17:48:28,393 Pipeline start
+2018-03-27 17:48:28,497 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-27 17:48:28,560 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-27 17:48:28,560 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-27 17:48:28,627 Starting labeling 
+2018-03-27 17:49:38,704 Finished labeling 
+2018-03-27 17:49:54,524 Pipeline start
+2018-03-27 17:49:54,723 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-27 17:49:54,849 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-27 17:49:54,850 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-27 17:49:54,959 Starting labeling 
+2018-03-27 17:50:50,960 Exception during reset or similar
+Traceback (most recent call last):
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 687, in _finalize_fairy
+    fairy._reset(pool)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 829, in _reset
+    pool._dialect.do_rollback(self)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 440, in do_rollback
+    dbapi_connection.rollback()
+OperationalError: SSL error: decryption failed or bad record mac
+
+2018-03-27 18:02:58,718 Finished labeling 
+2018-03-27 19:03:36,115 Pipeline start
+2018-03-27 19:03:36,344 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-27 19:03:36,489 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-27 19:03:36,489 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-27 19:03:55,268 Pipeline start
+2018-03-27 19:03:55,392 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-27 19:03:55,474 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-27 19:03:55,474 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-27 19:03:57,961 Stats logging
+2018-03-27 19:03:57,965 Get marginals
+2018-03-27 19:03:57,967 Load matrix
+2018-03-27 19:03:59,686 Saving marginals
+2018-03-27 19:07:26,138 Pipeline start
+2018-03-27 19:07:26,222 Saving predicate "http://dbpedia.org/ontology/spouse"
+2018-03-27 19:07:26,289 Predicate "http://dbpedia.org/ontology/spouse" already existing
+2018-03-27 19:07:26,289 Predicate "http://dbpedia.org/ontology/spouse" saved
+2018-03-27 19:37:38,493 Pipeline start
+2018-03-27 19:37:38,627 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-27 19:37:38,695 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-27 19:37:38,696 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-27 19:40:18,513 Pipeline start
+2018-03-27 19:40:18,617 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-27 19:40:18,685 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-27 19:40:18,685 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-27 19:40:29,712 Stats logging
+2018-03-27 19:42:09,274 Pipeline start
+2018-03-27 19:42:09,380 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-27 19:42:09,446 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-27 19:42:09,446 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-27 19:42:19,130 Stats logging
+2018-03-27 19:44:43,257 Pipeline start
+2018-03-27 19:44:43,367 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-27 19:44:43,432 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-27 19:44:43,433 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-27 19:45:22,809                         j  Coverage  Overlaps  Conflicts
+LF_distant_supervision  0  0.878782  0.004655   0.000179
+LF_words_between        1  0.021307  0.004834   0.000179
+LF_words_left           2  0.015040  0.003402   0.000179
+LF_words_right          3  0.016652  0.000895   0.000000
+2018-03-27 19:45:35,387 Stats logging
+2018-03-27 19:45:44,481 [1.57689226 0.08025202 0.07597334 0.07526428]
+2018-03-27 19:47:21,767 Pipeline start
+2018-03-27 19:47:21,876 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-27 19:47:21,942 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-27 19:47:21,943 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-27 19:47:40,431                         j  Coverage  Overlaps  Conflicts
+LF_distant_supervision  0  0.878782  0.004655   0.000179
+LF_words_between        1  0.021307  0.004834   0.000179
+LF_words_left           2  0.015040  0.003402   0.000179
+LF_words_right          3  0.016652  0.000895   0.000000
+2018-03-27 19:48:56,856 Stats logging
+2018-03-27 19:49:00,730 [1.57689226 0.08025202 0.07597334 0.07526428]
+2018-03-27 19:49:32,749 Pipeline start
+2018-03-27 19:49:32,863 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-27 19:49:32,933 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-27 19:49:32,933 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-27 19:49:39,244                         j  Coverage  Overlaps  Conflicts
+LF_distant_supervision  0  0.878782  0.004655   0.000179
+LF_words_between        1  0.021307  0.004834   0.000179
+LF_words_left           2  0.015040  0.003402   0.000179
+LF_words_right          3  0.016652  0.000895   0.000000
+2018-03-27 19:49:42,938 Stats logging
+2018-03-27 19:50:41,009 [1.33210559 0.08361652 0.08303371 0.08093895]
+2018-03-27 20:08:49,623 TP: 0, FP: 0, TN: 8440, FN: 2
+2018-03-27 20:08:49,666 Saving predicate "http://dbpedia.org/ontology/spouse"
+2018-03-27 20:08:49,678 Predicate "http://dbpedia.org/ontology/spouse" already existing
+2018-03-27 20:08:49,679 Predicate "http://dbpedia.org/ontology/spouse" saved
+2018-03-27 20:09:16,971 Empty DataFrame
+Columns: [j, Coverage, Overlaps, Conflicts]
+Index: []
+2018-03-27 20:11:11,332 Stats logging
+2018-03-27 20:11:44,381 Pipeline start
+2018-03-27 20:11:44,491 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-27 20:11:44,556 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-27 20:11:44,556 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-27 20:11:56,546                         j  Coverage  Overlaps  Conflicts
+LF_distant_supervision  0  0.878782  0.004655   0.000179
+LF_words_between        1  0.021307  0.004834   0.000179
+LF_words_left           2  0.015040  0.003402   0.000179
+LF_words_right          3  0.016652  0.000895   0.000000
+2018-03-27 20:12:04,075 Stats logging
+2018-03-27 20:12:20,153 [1.33210559 0.08361652 0.08303371 0.08093895]
+2018-03-27 21:18:59,724 Pipeline start
+2018-03-27 21:18:59,788 Saving predicate "http://dbpedia.org/ontology/spouse"
+2018-03-27 21:18:59,859 Predicate "http://dbpedia.org/ontology/spouse" already existing
+2018-03-27 21:18:59,859 Predicate "http://dbpedia.org/ontology/spouse" saved
+2018-03-27 21:19:03,946 Empty DataFrame
+Columns: [j, Coverage, Overlaps, Conflicts]
+Index: []
+2018-03-27 21:29:48,459 Pipeline start
+2018-03-27 21:29:48,528 Saving predicate "http://dbpedia.org/ontology/spouse"
+2018-03-27 21:29:48,602 Predicate "http://dbpedia.org/ontology/spouse" already existing
+2018-03-27 21:29:48,602 Predicate "http://dbpedia.org/ontology/spouse" saved
+2018-03-27 21:29:51,236 Empty DataFrame
+Columns: [j, Coverage, Overlaps, Conflicts]
+Index: []
+2018-03-27 21:30:38,549 Pipeline start
+2018-03-27 21:30:38,606 Saving predicate "http://dbpedia.org/ontology/spouse"
+2018-03-27 21:30:38,671 Predicate "http://dbpedia.org/ontology/spouse" already existing
+2018-03-27 21:30:38,672 Predicate "http://dbpedia.org/ontology/spouse" saved
+2018-03-27 21:30:51,277 Empty DataFrame
+Columns: [j, Coverage, Overlaps, Conflicts]
+Index: []
+2018-03-27 22:04:11,703 Pipeline start
+2018-03-27 22:04:11,759 Saving predicate "http://dbpedia.org/ontology/spouse"
+2018-03-27 22:04:11,833 Predicate "http://dbpedia.org/ontology/spouse" already existing
+2018-03-27 22:04:11,833 Predicate "http://dbpedia.org/ontology/spouse" saved
+2018-03-27 22:04:11,901 Starting candidates extraction 
+2018-03-27 22:04:11,902 Count candidates
+2018-03-27 22:04:11,930 Counting sentences
+2018-03-27 22:04:12,440 Sents count20000
+2018-03-27 22:04:12,440 	Quering sentences from 0 to 10000, in set 'train'
+2018-03-27 22:04:14,525 Extracting
+2018-03-27 22:06:10,668 		candidates extracted for PERSONPERSON
+2018-03-27 22:06:10,668 	Quering sentences from 10000 to 20000, in set 'train'
+2018-03-27 22:06:13,428 Extracting
+2018-03-27 22:08:37,821 		candidates extracted for PERSONPERSON
+2018-03-27 22:08:37,822 	Quering sentences from 20000 to 30000, in set 'train'
+2018-03-27 22:08:38,364 Extracting
+2018-03-27 22:08:38,365 Finished candidates extraction 
+2018-03-27 22:08:38,365 Starting dev setup
+2018-03-27 22:08:38,389 Downloading articles
+2018-03-27 22:08:38,389 Articles download start
+2018-03-27 22:08:43,711 Kevin Campbell page not saved
+2018-03-27 22:08:55,389 Peter Clark page not saved
+2018-03-27 22:09:12,894 Daniel Crowley page not saved
+2018-03-27 22:09:14,433 George Curtis page not saved
+2018-03-27 22:09:46,978 Articles download end
+2018-03-27 22:09:46,979 Parsing
+2018-03-27 22:09:46,979 Corpus parsing start
+2018-03-27 22:09:50,112 Already parsed Santi_Cazorla.xml
+2018-03-27 22:09:51,530 Already parsed William_H._Taft.xml
+2018-03-27 22:09:51,624 Already parsed Leslie_Compton.xml
+2018-03-27 22:09:51,695 Already parsed Alf_Common.xml
+2018-03-27 22:09:53,170 Already parsed Warren_G._Harding.xml
+2018-03-27 22:09:53,235 Already parsed Patrick_Cregg.xml
+2018-03-27 22:09:54,417 Already parsed Elon_Musk.xml
+2018-03-27 22:09:56,059 Already parsed George_W._Bush.xml
+2018-03-27 22:09:56,328 Already parsed Denis_Compton.xml
+2018-03-27 22:09:57,176 Already parsed Benjamin_Harrison.xml
+2018-03-27 22:09:58,829 Already parsed Richard_Nixon.xml
+2018-03-27 22:10:00,523 Already parsed Ronald_Reagan.xml
+2018-03-27 22:10:00,916 Already parsed Ashley_Cole.xml
+2018-03-27 22:10:01,024 Already parsed Calum_Chambers.xml
+2018-03-27 22:10:02,537 Already parsed Woodrow_Wilson.xml
+2018-03-27 22:10:02,956 Already parsed Sol_Campbell.xml
+2018-03-27 22:10:04,584 Already parsed George_H._W._Bush.xml
+2018-03-27 22:10:05,900 Already parsed Bill_Clinton.xml
+2018-03-27 22:10:07,097 Already parsed Herbert_Hoover.xml
+2018-03-27 22:10:07,412 Already parsed Andy_Cole.xml
+2018-03-27 22:10:09,202 Already parsed Dwight_D._Eisenhower.xml
+2018-03-27 22:10:10,642 Already parsed Franklin_D._Roosevelt.xml
+2018-03-27 22:10:12,524 Already parsed Lyndon_B._Johnson.xml
+2018-03-27 22:10:13,591 Already parsed Grover_Cleveland.xml
+2018-03-27 22:10:15,155 Already parsed Theodore_Roosevelt.xml
+2018-03-27 22:10:16,759 Already parsed Donald_Trump.xml
+2018-03-27 22:10:17,123 Already parsed Mel_Charles.xml
+2018-03-27 22:10:18,960 Already parsed John_F._Kennedy.xml
+2018-03-27 22:10:20,032 Already parsed Calvin_Coolidge.xml
+2018-03-27 22:10:22,365 Already parsed Gerald_Ford.xml
+2018-03-27 22:10:24,243 Already parsed Jimmy_Carter.xml
+2018-03-27 22:10:24,337 Already parsed Samir_Carruthers.xml
+2018-03-27 22:10:24,397 Already parsed Jack_Crayston.xml
+2018-03-27 22:10:25,649 Already parsed William_McKinley.xml
+2018-03-27 22:10:25,736 Already parsed Matthew_Connolly.xml
+2018-03-27 22:10:25,936 Already parsed Linus_Torvalds.xml
+2018-03-27 22:10:27,865 Already parsed Harry_S._Truman.xml
+2018-03-27 22:10:28,052 Already parsed Francis_Coquelin.xml
+2018-03-27 22:10:28,175 Already parsed Lee_Chapman.xml
+2018-03-27 22:10:28,247 Already parsed Pascal_Cygan.xml
+2018-03-27 22:10:28,311 Already parsed Eddie_Clamp.xml
+2018-03-27 22:10:28,380 Already parsed Tim_Coleman.xml
+2018-03-27 22:10:28,457 Already parsed Wilf_Copping.xml
+2018-03-27 22:10:29,719 Already parsed Barack_Obama.xml
+2018-03-27 22:10:30,088 Already parsed Marouane_Chamakh.xml
+2018-03-27 22:10:56,018 Pipeline start
+2018-03-27 22:10:56,085 Saving predicate "http://dbpedia.org/ontology/spouse"
+2018-03-27 22:10:56,156 Predicate "http://dbpedia.org/ontology/spouse" already existing
+2018-03-27 22:10:56,156 Predicate "http://dbpedia.org/ontology/spouse" saved
+2018-03-27 22:10:56,226 Starting labeling 
+2018-03-27 22:11:00,871 Exception during reset or similar
+Traceback (most recent call last):
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 687, in _finalize_fairy
+    fairy._reset(pool)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 829, in _reset
+    pool._dialect.do_rollback(self)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 440, in do_rollback
+    dbapi_connection.rollback()
+OperationalError: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+2018-03-27 22:11:00,982 Exception during reset or similar
+Traceback (most recent call last):
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 687, in _finalize_fairy
+    fairy._reset(pool)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 829, in _reset
+    pool._dialect.do_rollback(self)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 440, in do_rollback
+    dbapi_connection.rollback()
+OperationalError: SSL error: decryption failed or bad record mac
+
+2018-03-27 22:11:01,259 Exception during reset or similar
+Traceback (most recent call last):
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 687, in _finalize_fairy
+    fairy._reset(pool)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 829, in _reset
+    pool._dialect.do_rollback(self)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 440, in do_rollback
+    dbapi_connection.rollback()
+OperationalError: SSL SYSCALL error: EOF detected
+
+2018-03-27 22:11:01,947 Exception during reset or similar
+Traceback (most recent call last):
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 687, in _finalize_fairy
+    fairy._reset(pool)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 829, in _reset
+    pool._dialect.do_rollback(self)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 440, in do_rollback
+    dbapi_connection.rollback()
+OperationalError: SSL SYSCALL error: EOF detected
+
+2018-03-27 22:11:02,105 Exception during reset or similar
+Traceback (most recent call last):
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 687, in _finalize_fairy
+    fairy._reset(pool)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 829, in _reset
+    pool._dialect.do_rollback(self)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 440, in do_rollback
+    dbapi_connection.rollback()
+OperationalError: SSL SYSCALL error: EOF detected
+
+2018-03-27 22:11:02,515 Exception during reset or similar
+Traceback (most recent call last):
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 687, in _finalize_fairy
+    fairy._reset(pool)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 829, in _reset
+    pool._dialect.do_rollback(self)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 440, in do_rollback
+    dbapi_connection.rollback()
+OperationalError: SSL SYSCALL error: EOF detected
+
+2018-03-27 22:11:02,657 Exception during reset or similar
+Traceback (most recent call last):
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 687, in _finalize_fairy
+    fairy._reset(pool)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 829, in _reset
+    pool._dialect.do_rollback(self)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 440, in do_rollback
+    dbapi_connection.rollback()
+OperationalError: SSL SYSCALL error: EOF detected
+
+2018-03-27 22:14:53,009 Exception during reset or similar
+Traceback (most recent call last):
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 687, in _finalize_fairy
+    fairy._reset(pool)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 829, in _reset
+    pool._dialect.do_rollback(self)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 440, in do_rollback
+    dbapi_connection.rollback()
+OperationalError: SSL SYSCALL error: EOF detected
+
+2018-03-27 22:24:51,716 Finished labeling 
+2018-03-27 22:24:51,716 Start train gen
+2018-03-27 22:24:51,719 Load matrix
+2018-03-27 22:25:00,638 Train model
+2018-03-27 22:25:37,142 Save model
+2018-03-27 22:25:37,170 Get marginals
+2018-03-27 22:25:46,804 Save marginals
+2018-03-27 22:31:17,235 Start training disc 
+2018-03-27 22:31:17,237 Loading marginals 
+2018-03-27 22:31:17,937 Querying train cands
+2018-03-27 22:31:18,807 Querying dev cands
+2018-03-27 22:31:19,225 Querying gold labels
+2018-03-27 22:31:33,486 Training
+2018-03-27 23:01:51,947 Pipeline start
+2018-03-27 23:01:52,018 Saving predicate "http://dbpedia.org/ontology/spouse"
+2018-03-27 23:01:52,102 Predicate "http://dbpedia.org/ontology/spouse" already existing
+2018-03-27 23:01:52,103 Predicate "http://dbpedia.org/ontology/spouse" saved
+2018-03-27 23:02:00,663                                   j  Coverage  Overlaps  Conflicts
+LF_distant_supervision            0  0.004276  0.003695   0.002851
+LF_distant_supervision_and_words  1  0.000845  0.000845   0.000000
+LF_words_between                  2  0.010663  0.006757   0.003801
+LF_words_left                     3  0.006757  0.003114   0.000950
+LF_words_right                    4  0.003642  0.001848   0.000581
+LF_not_words                      5  0.027766  0.020006   0.004540
+LF_no_word_in_sentence            6  0.734850  0.018212   0.002745
+2018-03-27 23:14:37,522 Saving
+2018-03-27 23:14:38,738 End training disc 
+2018-03-27 23:15:02,131 Pipeline start
+2018-03-27 23:15:02,203 Saving predicate "http://dbpedia.org/ontology/spouse"
+2018-03-27 23:15:02,278 Predicate "http://dbpedia.org/ontology/spouse" already existing
+2018-03-27 23:15:02,279 Predicate "http://dbpedia.org/ontology/spouse" saved
+2018-03-27 23:15:10,740                                   j  Coverage  Overlaps  Conflicts
+LF_distant_supervision            0  0.004276  0.003695   0.002851
+LF_distant_supervision_and_words  1  0.000845  0.000845   0.000000
+LF_words_between                  2  0.010663  0.006757   0.003801
+LF_words_left                     3  0.006757  0.003114   0.000950
+LF_words_right                    4  0.003642  0.001848   0.000581
+LF_not_words                      5  0.027766  0.020006   0.004540
+LF_no_word_in_sentence            6  0.734850  0.018212   0.002745
+2018-03-27 23:16:16,837 Restoring parameters from checkpoints/DspouseLatest/DspouseLatest-0
+2018-03-27 23:23:54,162 Prec: 0.000, Recall: 0.000, F1 Score: 0.000
+2018-03-27 23:26:00,580 TP: 0, FP: 0, TN: 12089, FN: 2
+2018-03-27 23:26:01,986 Stats logging
+2018-03-28 14:26:59,022 Pipeline start
+2018-03-28 14:26:59,175 Saving predicate "http://dbpedia.org/ontology/spouse"
+2018-03-28 14:26:59,560 Predicate "http://dbpedia.org/ontology/spouse" already existing
+2018-03-28 14:26:59,561 Predicate "http://dbpedia.org/ontology/spouse" saved
+2018-03-28 14:27:00,078 Starting candidates extraction 
+2018-03-28 14:49:03,338 Pipeline start
+2018-03-28 14:49:03,396 Saving predicate "http://dbpedia.org/ontology/spouse"
+2018-03-28 14:49:03,462 Predicate "http://dbpedia.org/ontology/spouse" already existing
+2018-03-28 14:49:03,462 Predicate "http://dbpedia.org/ontology/spouse" saved
+2018-03-28 14:49:03,531 Starting labeling 
+2018-03-28 14:49:25,549 Finished labeling 
+2018-03-28 14:50:11,888 Pipeline start
+2018-03-28 14:50:11,957 Saving predicate "http://dbpedia.org/ontology/spouse"
+2018-03-28 14:50:12,022 Predicate "http://dbpedia.org/ontology/spouse" already existing
+2018-03-28 14:50:12,022 Predicate "http://dbpedia.org/ontology/spouse" saved
+2018-03-28 14:50:12,091 Starting labeling 
+2018-03-28 14:54:26,586 Finished labeling 
+2018-03-28 14:55:12,490 Pipeline start
+2018-03-28 14:55:12,551 Saving predicate "http://dbpedia.org/ontology/spouse"
+2018-03-28 14:55:12,619 Predicate "http://dbpedia.org/ontology/spouse" already existing
+2018-03-28 14:55:12,620 Predicate "http://dbpedia.org/ontology/spouse" saved
+2018-03-28 14:55:12,688 Starting labeling 
+2018-03-28 14:58:05,021 Finished labeling 
+2018-03-28 14:58:17,050 Pipeline start
+2018-03-28 14:58:17,112 Saving predicate "http://dbpedia.org/ontology/spouse"
+2018-03-28 14:58:17,187 Predicate "http://dbpedia.org/ontology/spouse" already existing
+2018-03-28 14:58:17,187 Predicate "http://dbpedia.org/ontology/spouse" saved
+2018-03-28 14:58:17,256 Starting labeling 
+2018-03-28 15:01:51,274 Finished labeling 
+2018-03-28 15:02:13,590 Pipeline start
+2018-03-28 15:02:13,651 Saving predicate "http://dbpedia.org/ontology/spouse"
+2018-03-28 15:02:13,721 Predicate "http://dbpedia.org/ontology/spouse" already existing
+2018-03-28 15:02:13,721 Predicate "http://dbpedia.org/ontology/spouse" saved
+2018-03-28 15:02:13,790 Starting labeling 
+2018-03-28 15:04:21,321 Finished labeling 
+2018-03-28 15:07:21,806 Pipeline start
+2018-03-28 15:07:21,868 Saving predicate "http://dbpedia.org/ontology/spouse"
+2018-03-28 15:07:21,939 Predicate "http://dbpedia.org/ontology/spouse" already existing
+2018-03-28 15:07:21,940 Predicate "http://dbpedia.org/ontology/spouse" saved
+2018-03-28 15:07:22,003 Starting candidates extraction 
+2018-03-28 15:07:28,342 Count candidates
+2018-03-28 15:07:28,366 Counting sentences
+2018-03-28 15:07:37,345 Sents count20000
+2018-03-28 15:07:37,345 	Quering sentences from 0 to 10000, in set 'train'
+2018-03-28 15:07:39,448 Extracting
+2018-03-28 15:08:48,471 		candidates extracted for PERSONPERSON
+2018-03-28 15:08:48,472 	Quering sentences from 10000 to 20000, in set 'train'
+2018-03-28 15:08:51,277 Extracting
+2018-03-28 15:10:16,744 		candidates extracted for PERSONPERSON
+2018-03-28 15:10:16,745 	Quering sentences from 20000 to 30000, in set 'train'
+2018-03-28 15:10:19,046 Extracting
+2018-03-28 15:10:19,047 Finished candidates extraction 
+2018-03-28 15:10:19,047 Starting labeling 
+2018-03-28 15:12:44,120 Finished labeling 
+2018-03-28 15:15:05,238 Pipeline start
+2018-03-28 15:15:05,302 Saving predicate "http://dbpedia.org/ontology/spouse"
+2018-03-28 15:15:05,373 Predicate "http://dbpedia.org/ontology/spouse" already existing
+2018-03-28 15:15:05,374 Predicate "http://dbpedia.org/ontology/spouse" saved
+2018-03-28 15:15:05,441 Starting candidates extraction 
+2018-03-28 15:15:21,717 Pipeline start
+2018-03-28 15:15:21,778 Saving predicate "http://dbpedia.org/ontology/spouse"
+2018-03-28 15:15:21,851 Predicate "http://dbpedia.org/ontology/spouse" already existing
+2018-03-28 15:15:21,851 Predicate "http://dbpedia.org/ontology/spouse" saved
+2018-03-28 15:15:21,921 Starting labeling 
+2018-03-28 15:16:18,387 Pipeline start
+2018-03-28 15:16:18,450 Saving predicate "http://dbpedia.org/ontology/spouse"
+2018-03-28 15:16:18,518 Predicate "http://dbpedia.org/ontology/spouse" already existing
+2018-03-28 15:16:18,519 Predicate "http://dbpedia.org/ontology/spouse" saved
+2018-03-28 15:16:18,586 Starting labeling 
+2018-03-28 15:22:59,105 Finished labeling 
+2018-03-28 15:24:59,269 Pipeline start
+2018-03-28 15:24:59,331 Saving predicate "http://dbpedia.org/ontology/spouse"
+2018-03-28 15:24:59,401 Predicate "http://dbpedia.org/ontology/spouse" already existing
+2018-03-28 15:24:59,401 Predicate "http://dbpedia.org/ontology/spouse" saved
+2018-03-28 15:24:59,464 Starting labeling 
+2018-03-28 15:28:25,356 Finished labeling 
+2018-03-28 15:29:23,098 Pipeline start
+2018-03-28 15:29:23,161 Saving predicate "http://dbpedia.org/ontology/spouse"
+2018-03-28 15:29:23,228 Predicate "http://dbpedia.org/ontology/spouse" already existing
+2018-03-28 15:29:23,228 Predicate "http://dbpedia.org/ontology/spouse" saved
+2018-03-28 15:29:23,296 Starting labeling 
+2018-03-28 15:30:50,166 Finished labeling 
+2018-03-28 15:31:10,369 Pipeline start
+2018-03-28 15:31:10,428 Saving predicate "http://dbpedia.org/ontology/spouse"
+2018-03-28 15:31:10,501 Predicate "http://dbpedia.org/ontology/spouse" already existing
+2018-03-28 15:31:10,501 Predicate "http://dbpedia.org/ontology/spouse" saved
+2018-03-28 15:31:10,567 Starting labeling 
+2018-03-28 15:33:52,488 Finished labeling 
+2018-03-28 15:35:41,756 Pipeline start
+2018-03-28 15:35:41,821 Saving predicate "http://dbpedia.org/ontology/spouse"
+2018-03-28 15:35:41,888 Predicate "http://dbpedia.org/ontology/spouse" already existing
+2018-03-28 15:35:41,889 Predicate "http://dbpedia.org/ontology/spouse" saved
+2018-03-28 15:35:41,959 Starting labeling 
+2018-03-28 15:51:39,392 Finished labeling 
+2018-03-28 15:51:39,567 Exception during reset or similar
+Traceback (most recent call last):
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 687, in _finalize_fairy
+    fairy._reset(pool)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 829, in _reset
+    pool._dialect.do_rollback(self)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 440, in do_rollback
+    dbapi_connection.rollback()
+OperationalError: SSL error: decryption failed or bad record mac
+
+2018-03-28 15:57:34,528 Pipeline start
+2018-03-28 15:57:34,593 Saving predicate "http://dbpedia.org/ontology/spouse"
+2018-03-28 15:57:34,664 Predicate "http://dbpedia.org/ontology/spouse" already existing
+2018-03-28 15:57:34,664 Predicate "http://dbpedia.org/ontology/spouse" saved
+2018-03-28 15:57:34,734 Start train gen
+2018-03-28 15:57:34,739 Load matrix
+2018-03-28 15:57:34,957 Train model
+2018-03-28 15:57:41,848 Save model
+2018-03-28 15:57:41,886 Get marginals
+2018-03-28 15:57:43,582 Save marginals
+2018-03-28 15:59:01,149 Start training disc 
+2018-03-28 15:59:01,152 Loading marginals 
+2018-03-28 15:59:01,316 Querying train cands
+2018-03-28 15:59:01,632 Querying dev cands
+2018-03-28 15:59:01,823 Querying gold labels
+2018-03-28 15:59:16,663 Training
+2018-03-28 15:59:39,272 Pipeline start
+2018-03-28 15:59:39,335 Saving predicate "http://dbpedia.org/ontology/spouse"
+2018-03-28 15:59:39,406 Predicate "http://dbpedia.org/ontology/spouse" already existing
+2018-03-28 15:59:39,407 Predicate "http://dbpedia.org/ontology/spouse" saved
+2018-03-28 15:59:39,473 Start training disc 
+2018-03-28 15:59:39,476 Loading marginals 
+2018-03-28 15:59:39,641 Querying train cands
+2018-03-28 15:59:39,815 Querying dev cands
+2018-03-28 15:59:40,142 Querying gold labels
+2018-03-28 15:59:52,234 Training
+2018-03-28 16:09:18,523 Saving
+2018-03-28 16:09:20,817 End training disc 
+2018-03-28 16:15:33,081 Pipeline start
+2018-03-28 16:15:33,161 Saving predicate "http://dbpedia.org/ontology/spouse"
+2018-03-28 16:15:33,230 Predicate "http://dbpedia.org/ontology/spouse" already existing
+2018-03-28 16:15:33,230 Predicate "http://dbpedia.org/ontology/spouse" saved
+2018-03-28 16:15:40,040 Stats logging
+2018-03-28 16:15:58,652 [0.12589968 0.08115693 0.07839089 0.07689418 0.11338469 0.97583015]
+2018-03-28 16:18:09,690 Pipeline start
+2018-03-28 16:18:09,746 Saving predicate "http://dbpedia.org/ontology/spouse"
+2018-03-28 16:18:09,811 Predicate "http://dbpedia.org/ontology/spouse" already existing
+2018-03-28 16:18:09,812 Predicate "http://dbpedia.org/ontology/spouse" saved
+2018-03-28 16:18:19,837 Stats logging
+2018-03-28 16:18:38,493 [0.12589968 0.08115693 0.07839089 0.07689418 0.11338469 0.97583015]
+2018-03-28 16:22:47,898 Pipeline start
+2018-03-28 16:22:47,959 Saving predicate "http://dbpedia.org/ontology/spouse"
+2018-03-28 16:22:48,027 Predicate "http://dbpedia.org/ontology/spouse" already existing
+2018-03-28 16:22:48,027 Predicate "http://dbpedia.org/ontology/spouse" saved
+2018-03-28 16:22:53,859 Stats logging
+2018-03-28 16:23:08,746 [0.12589968 0.08115693 0.07839089 0.07689418 0.11338469 0.97583015]
+2018-03-28 17:01:50,260 Pipeline start
+2018-03-28 17:01:50,319 Saving predicate "http://dbpedia.org/ontology/spouse"
+2018-03-28 17:01:50,390 Predicate "http://dbpedia.org/ontology/spouse" already existing
+2018-03-28 17:01:50,391 Predicate "http://dbpedia.org/ontology/spouse" saved
+2018-03-28 17:01:50,467 Start training disc 
+2018-03-28 17:01:50,471 Loading marginals 
+2018-03-28 17:01:50,640 Querying train cands
+2018-03-28 17:01:50,784 Querying dev cands
+2018-03-28 17:01:51,118 Querying gold labels
+2018-03-28 17:02:03,126 Training
+2018-03-28 17:10:15,847 Saving
+2018-03-28 17:10:17,356 End training disc 
+2018-03-28 17:14:35,732 Pipeline start
+2018-03-28 17:14:35,802 Saving predicate "http://dbpedia.org/ontology/spouse"
+2018-03-28 17:14:35,880 Predicate "http://dbpedia.org/ontology/spouse" already existing
+2018-03-28 17:14:35,880 Predicate "http://dbpedia.org/ontology/spouse" saved
+2018-03-28 17:14:35,961 Start training disc 
+2018-03-28 17:14:35,965 Loading marginals 
+2018-03-28 17:14:36,209 Querying train cands
+2018-03-28 17:14:36,372 Querying dev cands
+2018-03-28 17:14:36,726 Querying gold labels
+2018-03-28 17:14:53,747 Training
+2018-03-28 17:15:52,776 Pipeline start
+2018-03-28 17:15:52,845 Saving predicate "http://dbpedia.org/ontology/spouse"
+2018-03-28 17:15:52,921 Predicate "http://dbpedia.org/ontology/spouse" already existing
+2018-03-28 17:15:52,921 Predicate "http://dbpedia.org/ontology/spouse" saved
+2018-03-28 17:15:52,993 Start training disc 
+2018-03-28 17:15:52,996 Loading marginals 
+2018-03-28 17:15:53,201 Querying train cands
+2018-03-28 17:15:53,364 Querying dev cands
+2018-03-28 17:15:53,730 Querying gold labels
+2018-03-28 17:16:07,944 Training
+2018-03-28 17:16:40,776 Pipeline start
+2018-03-28 17:16:40,847 Saving predicate "http://dbpedia.org/ontology/spouse"
+2018-03-28 17:16:40,925 Predicate "http://dbpedia.org/ontology/spouse" already existing
+2018-03-28 17:16:40,926 Predicate "http://dbpedia.org/ontology/spouse" saved
+2018-03-28 17:16:43,455 Stats logging
+2018-03-28 17:17:05,044 [0.12589968 0.08115693 0.07839089 0.07689418 0.11338469 0.97583015]
+2018-03-28 17:17:43,131 Pipeline start
+2018-03-28 17:17:43,339 Saving predicate "http://dbpedia.org/ontology/spouse"
+2018-03-28 17:17:43,527 Predicate "http://dbpedia.org/ontology/spouse" already existing
+2018-03-28 17:17:43,527 Predicate "http://dbpedia.org/ontology/spouse" saved
+2018-03-28 17:17:48,506                         j  Coverage  Overlaps  Conflicts
+LF_distant_supervision  0  0.053822  0.040628   0.001257
+LF_words_between        1  0.017801  0.010471   0.005864
+LF_words_left           2  0.007539  0.004817   0.001466
+LF_words_right          3  0.003770  0.002723   0.000628
+LF_not_words            4  0.050890  0.036230   0.006702
+LF_no_word_in_sentence  5  0.736963  0.063246   0.000628
+2018-03-28 17:18:39,363 Loading marginals 
+2018-03-28 17:18:45,184 Restoring parameters from checkpoints/DspouseLatest/DspouseLatest-0
+2018-03-28 17:23:12,298 Saving
+2018-03-28 17:23:13,095 End training disc 
+2018-03-28 17:24:21,071 Prec: 0.000, Recall: 0.000, F1 Score: 0.000
+2018-03-28 17:25:11,281 TP: 0, FP: 13, TN: 12076, FN: 2
+2018-03-28 17:25:37,491 Prec: 0.000, Recall: 0.000, F1 Score: 0.000
+2018-03-30 22:38:12,490 Pipeline start
+2018-03-30 22:38:12,576 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-30 22:38:12,663 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-30 22:38:12,663 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-30 22:38:12,811 Starting labeling 
+2018-03-30 22:41:04,708 Finished labeling 
+2018-03-31 15:11:35,613 Pipeline start
+2018-03-31 15:11:36,343 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-31 15:11:36,643 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-31 15:11:36,643 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-31 15:12:07,355 Pipeline start
+2018-03-31 15:12:07,381 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-31 15:12:07,474 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-31 15:12:07,475 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-31 15:16:23,694 Pipeline start
+2018-03-31 15:16:23,719 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-31 15:16:23,786 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-31 15:16:23,787 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-31 15:16:41,495 Pipeline start
+2018-03-31 15:16:41,521 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-31 15:16:41,588 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-31 15:16:41,588 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-31 15:17:29,367 Loading marginals 
+2018-03-31 15:17:33,950 Restoring parameters from checkpoints/DbirthPlaceLatest/DbirthPlaceLatest-0
+2018-03-31 15:21:29,034 Prec: 0.000, Recall: 0.000, F1 Score: 0.000
+2018-03-31 15:22:14,160 TP: 0, FP: 8, TN: 9595, FN: 1
+2018-03-31 15:34:28,778 Pipeline start
+2018-03-31 15:34:28,805 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-31 15:34:28,873 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-31 15:34:28,873 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-31 15:35:08,411 Loading marginals 
+2018-03-31 15:35:26,132 Restoring parameters from checkpoints/DbirthPlaceLatest/DbirthPlaceLatest-0
+2018-03-31 15:41:12,307 Prec: 0.000, Recall: 0.000, F1 Score: 0.000
+2018-03-31 15:42:09,623 TP: 0, FP: 8, TN: 9595, FN: 1
+2018-03-31 15:44:24,022                         j  Coverage  Overlaps  Conflicts
+LF_distant_supervision  0  0.000000       0.0        0.0
+LF_words_between        1  0.000000       0.0        0.0
+LF_words_left           2  0.000000       0.0        0.0
+LF_words_right          3  0.000000       0.0        0.0
+LF_not_words            4  0.000000       0.0        0.0
+LF_no_word_in_sentence  5  0.000895       0.0        0.0
+2018-03-31 15:44:24,670 Stats logging
+2018-03-31 15:46:46,188 Pipeline start
+2018-03-31 15:46:46,212 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-31 15:46:46,275 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-31 15:46:46,275 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-31 15:47:27,048 Loading marginals 
+2018-03-31 15:47:32,097 Restoring parameters from checkpoints/DbirthPlaceLatest/DbirthPlaceLatest-0
+2018-03-31 15:48:41,282 Prec: 0.000, Recall: 0.000, F1 Score: 0.000
+2018-03-31 15:49:12,677 TP: 0, FP: 8, TN: 9595, FN: 1
+2018-03-31 16:02:04,382 Pipeline start
+2018-03-31 16:02:04,406 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-31 16:02:04,478 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-31 16:02:04,479 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-31 16:02:44,667 Loading marginals 
+2018-03-31 16:02:45,236 Restoring parameters from checkpoints/DbirthPlaceLatest/DbirthPlaceLatest-0
+2018-03-31 16:03:55,020 Prec: 0.000, Recall: 0.000, F1 Score: 0.000
+2018-03-31 16:04:25,107 TP: 0, FP: 8, TN: 9595, FN: 1
+2018-03-31 16:06:06,389 Pipeline start
+2018-03-31 16:06:06,435 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-31 16:06:06,568 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-31 16:06:06,568 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-31 16:06:55,193 Loading marginals 
+2018-03-31 16:06:55,777 Restoring parameters from checkpoints/DbirthPlaceLatest/DbirthPlaceLatest-0
+2018-03-31 16:08:07,661 Prec: 0.000, Recall: 0.000, F1 Score: 0.000
+2018-03-31 16:08:44,250 TP: 0, FP: 8, TN: 9595, FN: 1
+2018-03-31 16:10:14,691                         j  Coverage  Overlaps  Conflicts
+LF_distant_supervision  0  0.000000       0.0        0.0
+LF_words_between        1  0.000000       0.0        0.0
+LF_words_left           2  0.000000       0.0        0.0
+LF_words_right          3  0.000000       0.0        0.0
+LF_not_words            4  0.000000       0.0        0.0
+LF_no_word_in_sentence  5  0.000895       0.0        0.0
+2018-03-31 16:17:14,337 Pipeline start
+2018-03-31 16:17:14,361 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-31 16:17:14,431 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-31 16:17:14,431 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-31 16:17:27,888                         j  Coverage  Overlaps  Conflicts
+LF_distant_supervision  0  0.000000       0.0        0.0
+LF_words_between        1  0.000000       0.0        0.0
+LF_words_left           2  0.000000       0.0        0.0
+LF_words_right          3  0.000000       0.0        0.0
+LF_not_words            4  0.000000       0.0        0.0
+LF_no_word_in_sentence  5  0.000895       0.0        0.0
+2018-03-31 16:17:48,833                         j  Coverage  Overlaps  Conflicts
+LF_distant_supervision  0  0.000000       0.0        0.0
+LF_words_between        1  0.000000       0.0        0.0
+LF_words_left           2  0.000000       0.0        0.0
+LF_words_right          3  0.000000       0.0        0.0
+LF_not_words            4  0.000000       0.0        0.0
+LF_no_word_in_sentence  5  0.000895       0.0        0.0
+2018-03-31 16:52:35,019 Pipeline start
+2018-03-31 16:52:35,042 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-31 16:52:35,111 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-31 16:52:35,111 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-31 17:17:06,732 Pipeline start
+2018-03-31 17:17:06,817 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-31 17:17:06,885 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-31 17:17:06,886 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-31 17:17:50,503 Pipeline start
+2018-03-31 17:17:50,527 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-31 17:17:50,595 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-31 17:17:50,595 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-31 17:18:40,801 Pipeline start
+2018-03-31 17:18:40,826 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-31 17:18:40,890 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-31 17:18:40,891 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-31 17:18:43,738 Loading marginals 
+2018-03-31 17:18:45,001 Restoring parameters from checkpoints/DbirthPlaceLatest/DbirthPlaceLatest-0
+2018-03-31 17:18:49,230 Prec: 0.000, Recall: 0.000, F1 Score: 0.000
+2018-03-31 17:18:50,667 TP: 0, FP: 0, TN: 579, FN: 1
+2018-03-31 17:35:37,217 Pipeline start
+2018-03-31 17:35:37,245 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-31 17:35:37,314 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-31 17:35:37,314 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-31 17:35:40,573 Loading marginals 
+2018-03-31 17:35:40,966 Restoring parameters from checkpoints/DbirthPlaceLatest/DbirthPlaceLatest-0
+2018-03-31 17:35:44,907 Prec: 0.000, Recall: 0.000, F1 Score: 0.000
+2018-03-31 17:35:46,317 TP: 0, FP: 0, TN: 579, FN: 1
+2018-03-31 17:43:19,475 Empty DataFrame
+Columns: [j, Coverage, Overlaps, Conflicts]
+Index: []
+2018-03-31 17:44:41,498 Pipeline start
+2018-03-31 17:44:41,522 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-31 17:44:41,588 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-31 17:44:41,588 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-31 17:44:45,135 Loading marginals 
+2018-03-31 17:44:45,617 Restoring parameters from checkpoints/DbirthPlaceLatest/DbirthPlaceLatest-0
+2018-03-31 17:44:49,908 Prec: 0.000, Recall: 0.000, F1 Score: 0.000
+2018-03-31 17:44:51,335 TP: 0, FP: 0, TN: 579, FN: 1
+2018-03-31 17:48:23,047 Pipeline start
+2018-03-31 17:48:23,072 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-31 17:48:23,145 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-31 17:48:23,146 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-31 17:54:13,900 Pipeline start
+2018-03-31 17:54:13,923 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-31 17:54:13,993 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-31 17:54:13,993 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-31 17:56:00,937 Pipeline start
+2018-03-31 17:56:00,962 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-03-31 17:56:01,061 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-03-31 17:56:01,061 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-03-31 17:56:10,648 Exception during reset or similar
+Traceback (most recent call last):
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 687, in _finalize_fairy
+    fairy._reset(pool)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 829, in _reset
+    pool._dialect.do_rollback(self)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 440, in do_rollback
+    dbapi_connection.rollback()
+OperationalError: SSL error: decryption failed or bad record mac
+
+2018-03-31 17:56:10,731 Exception during reset or similar
+Traceback (most recent call last):
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 687, in _finalize_fairy
+    fairy._reset(pool)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 829, in _reset
+    pool._dialect.do_rollback(self)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 440, in do_rollback
+    dbapi_connection.rollback()
+OperationalError: SSL error: decryption failed or bad record mac
+
+2018-03-31 17:56:11,780 Exception during reset or similar
+Traceback (most recent call last):
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 687, in _finalize_fairy
+    fairy._reset(pool)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 829, in _reset
+    pool._dialect.do_rollback(self)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 440, in do_rollback
+    dbapi_connection.rollback()
+OperationalError: SSL SYSCALL error: EOF detected
+
+2018-03-31 17:56:11,802 Exception during reset or similar
+Traceback (most recent call last):
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 687, in _finalize_fairy
+    fairy._reset(pool)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 829, in _reset
+    pool._dialect.do_rollback(self)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 440, in do_rollback
+    dbapi_connection.rollback()
+OperationalError: SSL SYSCALL error: EOF detected
+
+2018-03-31 17:56:11,932 Exception during reset or similar
+Traceback (most recent call last):
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 687, in _finalize_fairy
+    fairy._reset(pool)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 829, in _reset
+    pool._dialect.do_rollback(self)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 440, in do_rollback
+    dbapi_connection.rollback()
+OperationalError: SSL SYSCALL error: EOF detected
+
+2018-03-31 17:56:12,155 Exception during reset or similar
+Traceback (most recent call last):
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 687, in _finalize_fairy
+    fairy._reset(pool)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 829, in _reset
+    pool._dialect.do_rollback(self)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 440, in do_rollback
+    dbapi_connection.rollback()
+OperationalError: SSL SYSCALL error: EOF detected
+
+2018-03-31 17:56:12,615 Exception during reset or similar
+Traceback (most recent call last):
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 687, in _finalize_fairy
+    fairy._reset(pool)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 829, in _reset
+    pool._dialect.do_rollback(self)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 440, in do_rollback
+    dbapi_connection.rollback()
+OperationalError: SSL SYSCALL error: EOF detected
+
+2018-03-31 17:57:53,346                         j  Coverage  Overlaps  Conflicts
+LF_distant_supervision  0  0.037931  0.027586   0.017241
+LF_words_between        1  0.015517  0.008621   0.000000
+LF_words_left           2  0.000000  0.000000   0.000000
+LF_words_right          3  0.000000  0.000000   0.000000
+LF_not_words            4  0.013793  0.008621   0.000000
+LF_no_word_in_sentence  5  0.806897  0.027586   0.017241
+2018-03-31 17:58:27,582 Exception during reset or similar
+Traceback (most recent call last):
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 687, in _finalize_fairy
+    fairy._reset(pool)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 829, in _reset
+    pool._dialect.do_rollback(self)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 440, in do_rollback
+    dbapi_connection.rollback()
+OperationalError: SSL SYSCALL error: EOF detected
+
+2018-04-01 11:36:36,462 Pipeline start
+2018-04-01 11:36:36,552 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-04-01 11:36:36,686 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-04-01 11:36:36,686 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-04-01 11:37:02,182 Exception during reset or similar
+Traceback (most recent call last):
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 687, in _finalize_fairy
+    fairy._reset(pool)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 829, in _reset
+    pool._dialect.do_rollback(self)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 440, in do_rollback
+    dbapi_connection.rollback()
+OperationalError: SSL error: decryption failed or bad record mac
+
+2018-04-01 11:37:03,353 Exception during reset or similar
+Traceback (most recent call last):
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 687, in _finalize_fairy
+    fairy._reset(pool)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/pool.py", line 829, in _reset
+    pool._dialect.do_rollback(self)
+  File "/home/lorenzo/workspace/DBpediaNLP/anaconda2/envs/py2Env/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 440, in do_rollback
+    dbapi_connection.rollback()
+OperationalError: SSL error: decryption failed or bad record mac
+
+2018-04-01 11:48:04,302 Pipeline start
+2018-04-01 11:48:04,332 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-04-01 11:48:04,399 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-04-01 11:48:04,400 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-04-01 11:48:26,321 Pipeline start
+2018-04-01 11:48:26,356 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-04-01 11:48:26,454 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-04-01 11:48:26,454 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-04-01 11:48:26,534 Starting dev setup
+2018-04-01 11:48:26,557 Downloading articles
+2018-04-01 11:48:26,557 Articles download start
+2018-04-01 11:49:49,543 Pipeline start
+2018-04-01 11:49:49,573 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-04-01 11:49:49,643 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-04-01 11:49:49,643 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-04-01 11:49:49,709 Starting dev setup
+2018-04-01 11:50:18,714 Pipeline start
+2018-04-01 11:50:18,744 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-04-01 11:50:18,813 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-04-01 11:50:18,813 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-04-01 11:50:18,877 Starting dev setup
+2018-04-01 11:51:15,891 Pipeline start
+2018-04-01 11:51:15,925 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-04-01 11:51:15,994 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-04-01 11:51:15,995 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-04-01 11:51:16,060 Starting dev setup
+2018-04-01 11:51:23,041 Starting test setup
+2018-04-01 11:51:23,042 Downloading articles
+2018-04-01 11:51:23,042 Articles download start
+2018-04-01 11:51:47,931 Articles download end
+2018-04-01 11:51:47,931 Parsing
+2018-04-01 11:51:47,931 Corpus parsing start
+2018-04-01 11:51:51,758 Already parsed Rita_Levi-Montalcini.xml
+2018-04-01 11:51:52,869 Already parsed Elon_Musk.xml
+2018-04-01 11:51:54,722 Already parsed Andrew_Jackson.xml
+2018-04-01 11:51:54,780 Already parsed Archie_Roe.xml
+2018-04-01 11:51:56,457 Already parsed George_Washington.xml
+2018-04-01 11:51:57,431 Already parsed Alessandro_Del_Piero.xml
+2018-04-01 11:51:58,224 Already parsed George_Roger_Waters.xml
+2018-04-01 11:51:59,636 Already parsed Thomas_Jefferson.xml
+2018-04-01 11:51:59,672 Already parsed Mark_Flatts.xml
+2018-04-01 11:52:00,581 Already parsed Anthony_Kiedis.xml
+2018-04-01 11:52:01,560 Already parsed John_Quincy_Adams.xml
+2018-04-01 11:52:02,576 Already parsed Grover_Cleveland.xml
+2018-04-01 11:52:03,676 Already parsed Francesco_Totti.xml
+2018-04-01 11:52:03,908 Already parsed Linus_Torvalds.xml
+2018-04-01 11:52:04,064 Already parsed Kevin_Campbell.xml
+2018-04-01 11:52:04,765 Already parsed Roger_Waters.xml
+2018-04-01 11:52:05,017 Already parsed Dave_Halliday.xml
+2018-04-01 11:52:05,665 Already parsed Zinedine_Zidane.xml
+2018-04-01 11:52:05,665 Corpus parsing end
+2018-04-01 11:52:05,666 Extracting
+2018-04-01 11:52:05,666 Starting candidates extraction 
+2018-04-01 11:52:14,020 Count candidates
+2018-04-01 11:52:14,116 Deleting candidates
+2018-04-01 11:52:18,678 Counting sentences
+2018-04-01 11:53:41,871 Sents count4504
+2018-04-01 11:53:41,872 	Quering sentences from 0 to 4504, in set '2'
+2018-04-01 11:53:45,905 Extracting
+2018-04-01 11:55:07,141 Pipeline start
+2018-04-01 11:55:07,171 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-04-01 11:55:07,239 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-04-01 11:55:07,240 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-04-01 11:55:07,299 Starting dev setup
+2018-04-01 11:55:38,985 Starting test setup
+2018-04-01 11:55:38,986 Downloading articles
+2018-04-01 11:55:38,986 Articles download start
+2018-04-01 11:56:03,701 Articles download end
+2018-04-01 11:56:03,701 Parsing
+2018-04-01 11:56:03,701 Corpus parsing start
+2018-04-01 11:56:06,068 Already parsed Rita_Levi-Montalcini.xml
+2018-04-01 11:56:07,081 Already parsed Elon_Musk.xml
+2018-04-01 11:56:09,041 Already parsed Andrew_Jackson.xml
+2018-04-01 11:56:09,098 Already parsed Archie_Roe.xml
+2018-04-01 11:56:10,695 Already parsed George_Washington.xml
+2018-04-01 11:56:11,557 Already parsed Alessandro_Del_Piero.xml
+2018-04-01 11:56:12,097 Already parsed George_Roger_Waters.xml
+2018-04-01 11:56:13,542 Already parsed Thomas_Jefferson.xml
+2018-04-01 11:56:13,575 Already parsed Mark_Flatts.xml
+2018-04-01 11:56:14,325 Already parsed Anthony_Kiedis.xml
+2018-04-01 11:56:15,196 Already parsed John_Quincy_Adams.xml
+2018-04-01 11:56:16,088 Already parsed Grover_Cleveland.xml
+2018-04-01 11:56:16,936 Already parsed Francesco_Totti.xml
+2018-04-01 11:56:17,316 Already parsed Linus_Torvalds.xml
+2018-04-01 11:56:17,439 Already parsed Kevin_Campbell.xml
+2018-04-01 11:56:17,927 Already parsed Roger_Waters.xml
+2018-04-01 11:56:18,117 Already parsed Dave_Halliday.xml
+2018-04-01 11:56:18,815 Already parsed Zinedine_Zidane.xml
+2018-04-01 11:56:18,815 Corpus parsing end
+2018-04-01 11:56:18,816 Extracting
+2018-04-01 11:56:18,817 Starting candidates extraction 
+2018-04-01 11:57:49,282 Count candidates
+2018-04-01 11:57:51,700 Deleting candidates
+2018-04-01 11:57:54,789 Counting sentences
+2018-04-01 11:57:57,479 Sents count4504
+2018-04-01 11:58:02,949 	Quering sentences from 0 to 4504, in set '2'
+2018-04-01 11:58:08,288 Extracting
+2018-04-02 12:20:24,848 Pipeline start
+2018-04-02 12:20:24,922 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-04-02 12:20:24,995 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-04-02 12:20:24,996 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-04-02 12:20:46,336 Pipeline start
+2018-04-02 12:20:46,361 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-04-02 12:20:46,430 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-04-02 12:20:46,430 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-04-02 12:20:56,439 Loading marginals 
+2018-04-02 12:20:58,091 Restoring parameters from checkpoints/DbirthPlaceLatest/DbirthPlaceLatest-0
+2018-04-02 12:23:17,901 Pipeline start
+2018-04-02 12:23:17,929 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-04-02 12:23:18,000 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-04-02 12:23:18,001 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-04-02 12:24:13,522 Pipeline start
+2018-04-02 12:24:13,553 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-04-02 12:24:13,618 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-04-02 12:24:13,618 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-04-02 12:25:32,428 Loading marginals 
+2018-04-02 12:25:33,770 Restoring parameters from checkpoints/DbirthPlaceLatest/DbirthPlaceLatest-0
+2018-04-02 12:40:53,898 Pipeline start
+2018-04-02 12:40:53,923 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-04-02 12:40:53,986 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-04-02 12:40:53,986 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-04-02 12:40:58,671 Loading marginals 
+2018-04-02 12:41:00,035 Restoring parameters from checkpoints/DbirthPlaceLatest/DbirthPlaceLatest-0
+2018-04-02 12:46:25,249 Pipeline start
+2018-04-02 12:46:25,275 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-04-02 12:46:25,342 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-04-02 12:46:25,342 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-04-02 12:46:25,417 Loading marginals 
+2018-04-02 12:49:55,978 Restoring parameters from checkpoints/DbirthPlaceLatest/DbirthPlaceLatest-0
+2018-04-02 12:50:15,389 Pipeline start
+2018-04-02 12:50:15,415 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-04-02 12:50:15,485 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-04-02 12:50:15,485 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-04-02 12:50:15,556 Loading marginals 
+2018-04-02 12:50:26,531 Restoring parameters from checkpoints/DbirthPlaceLatest/DbirthPlaceLatest-0
+2018-04-25 12:13:45,540 Pipeline start
+2018-04-25 12:13:47,045 Corpus parsing start
+2018-04-25 12:14:33,264 Pipeline start
+2018-04-25 12:14:33,264 Corpus parsing start
+2018-04-25 12:14:49,218 Corpus parsing end
+2018-04-25 12:14:49,273 Saving predicate "http://dbpedia.org/ontology/birthPlace"
+2018-04-25 12:14:49,598 Predicate "http://dbpedia.org/ontology/birthPlace" already existing
+2018-04-25 12:14:49,598 Predicate "http://dbpedia.org/ontology/birthPlace" saved
+2018-04-25 12:14:49,599 Starting infering predicate "http://dbpedia.org/ontology/birthPlace" domain, range and candidates types 
+2018-04-25 12:14:50,449 Finished infering predicate "http://dbpedia.org/ontology/birthPlace" domain, range and candidates types 
+2018-04-25 12:14:50,686 Starting downloading samples for predicate "http://dbpedia.org/ontology/birthPlace" domain "http://dbpedia.org/ontology/Person", range "http://dbpedia.org/ontology/Place"
+2018-04-25 12:14:50,686 Samples download config is false, skipping....
+2018-04-25 12:14:50,687 Starting candidates extraction 
+2018-04-25 12:15:05,451 Count candidates
