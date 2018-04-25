@@ -7,6 +7,6 @@
 [submodule "lookup"]
 	path = lookup
 	url = https://github.com/dbpedia/lookup.git
-[submodule "14237107rkkhdfdnykck"]
-	path = thesis
-	url = https://git.overleaf.com/14237107rkkhdfdnykck
+[submodule "thesis-sentimantic"]
+	path = thesis-sentimantic
+	url = https://github.com/lorenzoranucci/thesis-sentimantic.git
