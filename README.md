@@ -1,13 +1,13 @@
-#SENTIMANTIC
+# SENTIMANTIC
 
 
-##Docker
+## Docker
 
-###Build (optional)
+### Build (optional)
 
 docker-compose build 
 
-###Run project stack
+### Run project stack
 
 Swarm init:
 
@@ -35,5 +35,5 @@ Re-deploy:
 
 ```docker stack deploy -c docker-compose.yml sentimantic ```
 
-###Run project
+### Run project
 
